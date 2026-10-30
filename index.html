@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Role Ready — Internal Job Roles Knowledge Guide for the Sales Team (US & Canada market). Fast reference for 17 job roles, technical terminology, tools, certifications, and candidate cross-questions.">
+  <title>Role Ready — Job Roles Knowledge Guide | Sales Team</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23B895E8'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand" aria-label="Role Ready Home">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Role Ready</span>
+          <span class="brand-subtitle">Sales Knowledge Base</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#/" class="nav-link" data-route="home">Roles Directory</a></li>
+          <li><a href="#/compare" class="nav-link" data-route="compare">Compare Roles</a></li>
+          <li><a href="#/glossary" class="nav-link" data-route="glossary">A–Z Glossary</a></li>
+          <li><a href="#/market-basics" class="nav-link" data-route="market-basics">US & CA Basics</a></li>
+          <li><a href="#/call-scripts" class="nav-link" data-route="call-scripts">Call Guidelines</a></li>
+          <li><a href="#/quiz" class="nav-link" data-route="quiz">Self-Quiz</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Live Call Mode indicator badge -->
+        <span class="live-call-active-badge" id="header-call-badge" title="Live Call Mode Active">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          Live Call
+        </span>
+
+        <!-- Search button -->
+        <button type="button" class="search-trigger-btn" id="btn-open-search" aria-label="Open search modal (Shortcut: /)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span>Search...</span>
+          <kbd class="kbd-shortcut">/</kbd>
+        </button>
+
+        <!-- Theme toggle -->
+        <button type="button" class="theme-toggle-btn" id="btn-toggle-theme" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <!-- Mobile hamburger toggle -->
+        <button type="button" class="mobile-menu-btn" id="btn-mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" style="display: none;">
+      <a href="#/" class="nav-link" data-route="home">Roles Directory (17 Roles)</a>
+      <a href="#/compare" class="nav-link" data-route="compare">Compare Commonly Confused Roles</a>
+      <a href="#/glossary" class="nav-link" data-route="glossary">A–Z Key Terms Glossary</a>
+      <a href="#/market-basics" class="nav-link" data-route="market-basics">US & CA Job Market Basics</a>
+      <a href="#/call-scripts" class="nav-link" data-route="call-scripts">Handling Cross-Questions & Call Scripts</a>
+      <a href="#/quiz" class="nav-link" data-route="quiz">Sales Knowledge Self-Quiz</a>
+    </div>
+  </header>
+
+  <!-- Main App Content Container (Dynamic Router View) -->
+  <main id="app-content" class="container" role="main">
+    <!-- Rendered dynamically by js/app.js -->
+  </main>
+
+  <!-- Global Search Modal (FR-4, FR-5, FR-13) -->
+  <div class="modal-overlay" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Job Roles and Terminology">
+    <div class="search-modal">
+      <div class="search-input-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="global-search-input" placeholder="Search roles, alternate titles (e.g. SRE, SOC, PMM), terms, tools..." autocomplete="off">
+        <button type="button" class="btn-toolbar" id="btn-close-search" aria-label="Close search (Esc)">Esc</button>
+      </div>
+      <div class="search-results-list" id="search-results-list">
+        <!-- Results populated dynamically -->
+      </div>
+      <div class="search-modal-footer">
+        <span>Use <kbd class="kbd-shortcut">↑</kbd> <kbd class="kbd-shortcut">↓</kbd> to navigate, <kbd class="kbd-shortcut">Enter</kbd> to select</span>
+        <span>Press <kbd class="kbd-shortcut">Esc</kbd> to exit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Site Footer (FR-15, FR-17) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <strong>Role Ready — Internal Sales Knowledge Guide</strong>
+        <p>Candidate Marketing Support for United States & Canada Job Seekers</p>
+        <p>Content last reviewed: <span id="footer-reviewed-date">30 Oct 2026</span> • Version 1.0 (Baseline)</p>
+        <div class="footer-creator-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span>Created by <strong>Alisha Dsouza</strong> for the Sales Team</span>
+        </div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#/call-scripts" style="color: var(--danger); font-weight: 600;">Compliance Guardrails</a></li>
+        <li><a href="#/glossary">Glossary</a></li>
+        <li><a href="#/compare">Compare</a></li>
+        <li><a href="#/quiz">Self-Quiz</a></li>
+        <li>
+          <a href="mailto:alisha.dsouza@internal.company.com?subject=Role%20Ready%20Guide%20Feedback" class="footer-feedback-link">
+            Something wrong or missing? Send feedback to Alisha
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container footer-footnote-bar">
+      <span>Role Ready Knowledge Base • Created by <strong>Alisha Dsouza</strong> for the Sales Team • All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <!-- Content Data -->
+  <script src="data/roles-data.js"></script>
+  <!-- Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+

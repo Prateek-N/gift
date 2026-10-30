@@ -1,0 +1,4932 @@
+/** Auto-generated from PRD baseline content */
+window.ROLES_DATA = {
+  "version": "1.0",
+  "lastUpdated": "2026-10-30",
+  "categories": [
+    {
+      "id": "tech-ai",
+      "name": "Tech & AI",
+      "badgeColor": "blue",
+      "description": "Software engineering, artificial intelligence, data science, cybersecurity, and modern cloud infrastructure.",
+      "roles": [
+        "ai-ml-engineer",
+        "data-scientist",
+        "cybersecurity-analyst",
+        "cloud-engineer",
+        "devops-engineer",
+        "software-developer",
+        "prompt-engineer"
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering, Construction & Manufacturing",
+      "badgeColor": "amber",
+      "description": "Physical infrastructure, mechanical systems, high-voltage electrical, chemical process optimization, and regulatory validation.",
+      "roles": [
+        "civil-engineer",
+        "construction-manager",
+        "mechanical-engineer",
+        "electrical-engineer",
+        "process-engineer",
+        "validation-engineer"
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business, Marketing & Operations",
+      "badgeColor": "emerald",
+      "description": "Digital marketing channels, product management roadmaps, brand leadership, and global supply chain logistics.",
+      "roles": [
+        "digital-marketing-specialist",
+        "marketing-manager",
+        "product-manager",
+        "supply-chain-analyst"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "ai-ml-engineer",
+      "name": "AI / Machine Learning Engineer",
+      "category": "Tech & AI",
+      "icon": "cpu",
+      "oneLiner": "Builds systems that learn from data and deploy AI/ML models to production at scale.",
+      "quickPitch": "An ML Engineer builds systems that learn from data and make predictions or decisions — like fraud detection, recommendation engines (\"customers also bought…\"), or chatbots. They take models from experiments and turn them into reliable software running in production.",
+      "dayToDay": [
+        "Collect and prepare data for training models.",
+        "Train, test and improve machine learning / deep learning models.",
+        "Deploy models into apps and APIs so real users can use them.",
+        "Monitor model accuracy over time and retrain when performance drops.",
+        "Increasingly: build applications on top of Large Language Models (LLMs) such as GPT, Claude, Llama."
+      ],
+      "altTitles": [
+        "ML Engineer",
+        "AI Engineer",
+        "Deep Learning Engineer",
+        "MLOps Engineer",
+        "Applied Scientist",
+        "GenAI Engineer",
+        "NLP Engineer",
+        "Computer Vision Engineer"
+      ],
+      "keyTerms": [
+        {
+          "term": "Machine Learning (ML)",
+          "definition": "Software that learns patterns from data instead of being hand-coded with rules."
+        },
+        {
+          "term": "Model",
+          "definition": "The \"trained brain\" produced by learning from data."
+        },
+        {
+          "term": "Training / Inference",
+          "definition": "Training = teaching the model; inference = using it to make a prediction."
+        },
+        {
+          "term": "Supervised vs Unsupervised",
+          "definition": "Supervised learns from labelled examples; unsupervised finds patterns in unlabelled data."
+        },
+        {
+          "term": "Deep Learning / Neural Network",
+          "definition": "ML using layered networks loosely inspired by the brain; powers image, speech and language AI."
+        },
+        {
+          "term": "LLM",
+          "definition": "Large Language Model — AI trained on huge text data to understand and generate language."
+        },
+        {
+          "term": "NLP / Computer Vision",
+          "definition": "AI for text/language / AI for images and video."
+        },
+        {
+          "term": "RAG",
+          "definition": "Retrieval-Augmented Generation — giving an LLM access to company documents so it answers using them."
+        },
+        {
+          "term": "MLOps",
+          "definition": "DevOps practices applied to ML: deploying, versioning and monitoring models."
+        },
+        {
+          "term": "Fine-tuning",
+          "definition": "Further training an existing model on specific data to specialise it."
+        }
+      ],
+      "toolsSummary": "Python; PyTorch, TensorFlow, scikit-learn; Hugging Face; LangChain/LlamaIndex; MLflow, Kubeflow; Docker, Kubernetes; AWS SageMaker, Azure ML, Google Vertex AI; vector databases (Pinecone, FAISS); SQL.",
+      "toolsList": [
+        "Python",
+        "PyTorch, TensorFlow, scikit-learn",
+        "Hugging Face",
+        "LangChain/LlamaIndex",
+        "MLflow, Kubeflow",
+        "Docker, Kubernetes",
+        "AWS SageMaker, Azure ML, Google Vertex AI",
+        "vector databases (Pinecone, FAISS)",
+        "SQL."
+      ],
+      "certificationsSummary": "AWS Certified Machine Learning (Specialty/Engineer–Associate), Google Professional Machine Learning Engineer, Microsoft Azure AI Engineer Associate (AI-102), TensorFlow / DeepLearning.AI course certificates.",
+      "certificationsList": [
+        "AWS Certified Machine Learning (Specialty/Engineer–Associate)",
+        "Google Professional Machine Learning Engineer",
+        "Microsoft Azure AI Engineer Associate (AI-102)",
+        "TensorFlow / DeepLearning.AI course certificates."
+      ],
+      "roadmap": {
+        "foundation": "Python, statistics & probability, linear algebra basics, data handling (Pandas, NumPy), SQL.",
+        "jobReady": "classic ML algorithms (regression, decision trees, clustering), scikit-learn, one deep learning framework (PyTorch), model evaluation, Git, building APIs (Flask/FastAPI), Docker, one cloud ML platform, 2–3 portfolio projects on GitHub.",
+        "advanced": "LLMs, RAG, fine-tuning, MLOps pipelines, Kubernetes, distributed training, model monitoring, system design for ML."
+      },
+      "background": "CS/IT, Data Science, Math, Statistics, Electronics; often moves up from Software Developer or Data Scientist.",
+      "industries": [
+        "Tech",
+        "finance/banking",
+        "healthcare",
+        "e-commerce",
+        "insurance",
+        "automotive",
+        "consulting."
+      ],
+      "industriesSummary": "Tech, finance/banking, healthcare, e-commerce, insurance, automotive, consulting.",
+      "resumeKeywords": [
+        "Python",
+        "PyTorch/TensorFlow",
+        "model deployment",
+        "MLOps",
+        "LLM",
+        "RAG",
+        "AWS/Azure/GCP",
+        "measurable impact (\"improved accuracy by 12%\")."
+      ],
+      "resumeKeywordsSummary": "Python, PyTorch/TensorFlow, model deployment, MLOps, LLM, RAG, AWS/Azure/GCP, measurable impact (\"improved accuracy by 12%\").",
+      "crossQuestions": [
+        {
+          "q": "What's the difference between an ML Engineer and a Data Scientist?",
+          "a": "A Data Scientist mainly analyses data and builds models to find insights; an ML Engineer focuses on building and deploying those models into production software at scale. There's overlap, and we position your profile based on which side your experience leans."
+        },
+        {
+          "q": "Is GenAI/LLM experience important now?",
+          "a": "Yes, many current AI job descriptions mention LLMs, RAG or GenAI. If you've built anything with them, we'll highlight it prominently."
+        },
+        {
+          "q": "I only have academic projects.",
+          "a": "That's common for entry-level candidates. Strong GitHub projects with clear results, plus a cloud ML certification, help close the gap."
+        },
+        {
+          "q": "Do you know MLOps?",
+          "a": "It's the practice of reliably deploying, versioning and monitoring ML models — basically DevOps for machine learning, with tools like MLflow, Kubeflow and SageMaker."
+        }
+      ],
+      "relatedRoles": [
+        "data-scientist",
+        "prompt-engineer",
+        "software-developer",
+        "cloud-engineer"
+      ],
+      "salary": {
+        "us": "$135,000 - $190,000 (Median ~$155,000)",
+        "ca": "CAD $110,000 - $160,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the key difference between a Data Scientist and an ML Engineer?",
+          "options": [
+            "Data Scientists build and maintain hardware servers; ML Engineers write web pages.",
+            "Data Scientists focus on analyzing data and finding insights; ML Engineers focus on building and deploying models into scalable production software.",
+            "ML Engineers only work with spreadsheets, while Data Scientists only program in C++.",
+            "There is no difference; they are identical job titles with identical day-to-day tasks."
+          ],
+          "answer": 1,
+          "explanation": "Data Scientists uncover insights and develop initial models, whereas ML Engineers take those models and engineer robust, production-ready software systems around them."
+        },
+        {
+          "q": "What does RAG stand for in modern AI application development?",
+          "options": [
+            "Random Automated Generation",
+            "Retrieval-Augmented Generation",
+            "Recursive Algorithm Gradients",
+            "Real-time Analytical Graphing"
+          ],
+          "answer": 1,
+          "explanation": "Retrieval-Augmented Generation (RAG) grounds an LLM by pulling relevant knowledge/documents from a vector database before generating an answer."
+        },
+        {
+          "q": "What is MLOps?",
+          "options": [
+            "A brand of machine learning computer processors.",
+            "DevOps practices applied to machine learning: automating deployment, monitoring, and versioning of ML models.",
+            "A legal compliance document required for training neural networks in California.",
+            "An open-source spreadsheet used for manual data labeling."
+          ],
+          "answer": 1,
+          "explanation": "MLOps applies continuous integration, deployment, and monitoring practices to ML models in production (e.g. using tools like MLflow, Kubeflow, SageMaker)."
+        },
+        {
+          "q": "Which framework is currently the most widely used for training modern deep learning models?",
+          "options": [
+            "PyTorch",
+            "jQuery",
+            "Ruby on Rails",
+            "Bootstrap"
+          ],
+          "answer": 0,
+          "explanation": "PyTorch (along with TensorFlow) is the standard deep learning framework in research and modern AI production."
+        },
+        {
+          "q": "How should a sales rep respond if a candidate asks: 'Is GenAI / LLM experience really necessary for ML roles today?'",
+          "options": [
+            "Tell them GenAI is a fad and recruiters never ask about it.",
+            "Affirm that many modern postings emphasize LLMs and RAG, and assure them we'll prominently showcase any GenAI projects they have.",
+            "Advise them to change their entire career path to marketing immediately.",
+            "Promise them a $200k salary if they take one 10-minute online tutorial."
+          ],
+          "answer": 1,
+          "explanation": "Acknowledging the industry surge in LLM/RAG requirements and reassuring the candidate that we highlight their practical projects builds confidence and credibility."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "data-scientist",
+      "name": "Data Scientist",
+      "category": "Tech & AI",
+      "icon": "bar-chart-2",
+      "oneLiner": "Uses data, statistics and machine learning to answer business questions and predict outcomes.",
+      "quickPitch": "A Data Scientist uses data, statistics and programming to answer business questions and predict outcomes — for example, which customers might cancel, or how much stock to order. They turn raw data into insights and recommendations.",
+      "dayToDay": [
+        "Gather and clean data from databases and files.",
+        "Explore data to find trends and patterns (EDA).",
+        "Build statistical and machine learning models to predict outcomes.",
+        "Run experiments such as A/B tests.",
+        "Present findings through dashboards and presentations to business teams."
+      ],
+      "altTitles": [
+        "Data Analyst (more junior/reporting-focused)",
+        "Data Scientist",
+        "Applied Scientist",
+        "Decision Scientist",
+        "Quantitative Analyst",
+        "Analytics Engineer (related)",
+        "Research Scientist"
+      ],
+      "keyTerms": [
+        {
+          "term": "EDA",
+          "definition": "Exploratory Data Analysis — first look at data to understand it."
+        },
+        {
+          "term": "Data cleaning / wrangling",
+          "definition": "Fixing missing, wrong or messy data."
+        },
+        {
+          "term": "Regression / Classification",
+          "definition": "Predicting a number (price) / predicting a category (yes/no, spam/not spam)."
+        },
+        {
+          "term": "A/B testing",
+          "definition": "Comparing two versions to see which performs better."
+        },
+        {
+          "term": "Hypothesis testing / p-value",
+          "definition": "Statistical way to check if a result is real or chance."
+        },
+        {
+          "term": "Feature engineering",
+          "definition": "Creating useful input variables for a model."
+        },
+        {
+          "term": "Overfitting",
+          "definition": "When a model memorises training data and fails on new data."
+        },
+        {
+          "term": "Data visualisation",
+          "definition": "Charts and dashboards that explain data."
+        },
+        {
+          "term": "Big Data",
+          "definition": "Data too large for normal tools; handled with Spark, Hadoop."
+        },
+        {
+          "term": "Data Engineer (related)",
+          "definition": "Builds the pipelines that move and store data; Data Scientists use that data."
+        }
+      ],
+      "toolsSummary": "Python (Pandas, NumPy, scikit-learn), R, SQL, Jupyter, Tableau, Power BI, Excel, Spark, Databricks, Snowflake, cloud (AWS/Azure/GCP).",
+      "toolsList": [
+        "Python (Pandas, NumPy, scikit-learn), R, SQL, Jupyter, Tableau, Power BI, Excel, Spark, Databricks, Snowflake, cloud (AWS/Azure/GCP)."
+      ],
+      "certificationsSummary": "IBM Data Science Professional Certificate, Google Data Analytics / Advanced Data Analytics, Microsoft Power BI Data Analyst (PL-300), Azure Data Scientist Associate (DP-100), Databricks certifications.",
+      "certificationsList": [
+        "IBM Data Science Professional Certificate",
+        "Google Data Analytics / Advanced Data Analytics",
+        "Microsoft Power BI Data Analyst (PL-300)",
+        "Azure Data Scientist Associate (DP-100)",
+        "Databricks certifications."
+      ],
+      "roadmap": {
+        "foundation": "Excel, SQL, statistics basics, Python basics, data visualisation.",
+        "jobReady": "Pandas, EDA, ML with scikit-learn, Tableau/Power BI, A/B testing, storytelling with data, 2–3 end-to-end projects (e.g., Kaggle).",
+        "advanced": "deep learning, big data (Spark), cloud data platforms, experiment design, causal inference, mentoring, business strategy influence."
+      },
+      "background": "Statistics, Math, CS, Economics, Engineering, Physics; many have a Master's.",
+      "industries": [
+        "Every industry — tech",
+        "banking",
+        "retail",
+        "healthcare",
+        "insurance",
+        "telecom",
+        "consulting."
+      ],
+      "industriesSummary": "Every industry — tech, banking, retail, healthcare, insurance, telecom, consulting.",
+      "resumeKeywords": [
+        "Python",
+        "SQL",
+        "machine learning",
+        "statistics",
+        "Tableau/Power BI",
+        "A/B testing",
+        "business impact numbers."
+      ],
+      "resumeKeywordsSummary": "Python, SQL, machine learning, statistics, Tableau/Power BI, A/B testing, business impact numbers.",
+      "crossQuestions": [
+        {
+          "q": "Data Analyst vs Data Scientist?",
+          "a": "Analysts focus on reporting and explaining what happened (SQL, Excel, dashboards). Scientists go further, predicting what will happen using statistics and ML. Many candidates target both titles, and we can market you for both if your skills fit."
+        },
+        {
+          "q": "Do I need a Master's?",
+          "a": "It's common but not mandatory; strong projects, SQL/Python skills and relevant experience can compensate."
+        },
+        {
+          "q": "Which is more important, Python or SQL?",
+          "a": "Both. SQL appears in almost every data job description; Python is standard for analysis and modelling."
+        },
+        {
+          "q": "Do I need experience with Big Data tools like Spark or Hadoop for entry/mid roles?",
+          "a": "For entry to mid-level roles, strong Python (Pandas/NumPy/scikit-learn) and advanced SQL are the core essentials; distributed big data tools like Spark or Databricks are usually valued bonuses or required for senior roles. We position your resume highlighting data analysis and measurable modeling impact."
+        }
+      ],
+      "relatedRoles": [
+        "ai-ml-engineer",
+        "software-developer",
+        "supply-chain-analyst"
+      ],
+      "salary": {
+        "us": "$110,000 - $165,000 (Median ~$135,000)",
+        "ca": "CAD $95,000 - $140,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the primary difference between a Data Analyst and a Data Scientist?",
+          "options": [
+            "Data Analysts build deep neural networks; Data Scientists only write SQL queries.",
+            "Data Analysts primarily analyze past data and create reports/dashboards; Data Scientists use statistical modeling and ML to predict future outcomes.",
+            "Data Scientists do not use programming languages.",
+            "Data Analysts require a PhD, whereas Data Scientists need no degree."
+          ],
+          "answer": 1,
+          "explanation": "Analysts focus on descriptive and diagnostic analytics (what happened), while Data Scientists use advanced predictive modeling and machine learning."
+        },
+        {
+          "q": "What is 'Overfitting' in machine learning?",
+          "options": [
+            "When a computer case is too small for the graphics card.",
+            "When a model memorizes training data so closely that it performs poorly on new, unseen data.",
+            "When a dataset has too many duplicate rows deleted.",
+            "When an algorithm finishes training in less than 5 minutes."
+          ],
+          "answer": 1,
+          "explanation": "Overfitting happens when a model learns noise and specific details of the training set instead of generalized underlying patterns."
+        },
+        {
+          "q": "Which two technical tools are fundamental prerequisites found on almost every Data Scientist job description?",
+          "options": [
+            "Photoshop and Canva",
+            "Python and SQL",
+            "AutoCAD and SolidWorks",
+            "Ruby and Swift"
+          ],
+          "answer": 1,
+          "explanation": "SQL is ubiquitous for querying and extracting data from relational warehouses, and Python is the standard for statistical analysis and machine learning."
+        },
+        {
+          "q": "What is an A/B test?",
+          "options": [
+            "A standardized typing test required during hiring.",
+            "A controlled experiment comparing two versions (A and B) to determine which produces better performance or user engagement.",
+            "An automated unit test checking code indentation.",
+            "A grading scale for data warehouse cleanliness."
+          ],
+          "answer": 1,
+          "explanation": "A/B testing is the gold standard randomized experimentation method for evaluating product changes and feature impacts with statistical rigor."
+        },
+        {
+          "q": "If an entry-level candidate worries they don't have a Master's degree for Data Science, what should the rep say?",
+          "options": [
+            "Tell them without a Master's or PhD they can never get an interview.",
+            "Explain that while graduate degrees are common, strong end-to-end projects, solid SQL/Python skills, and relevant experience can bridge the gap.",
+            "Offer to forge educational credentials on their resume.",
+            "Advise them to apply only for administrative assistant roles."
+          ],
+          "answer": 1,
+          "explanation": "Proven portfolio projects, Kaggle accomplishments, and strong practical problem-solving frequently open doors despite not having an advanced degree."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "cybersecurity-analyst",
+      "name": "Cybersecurity Analyst",
+      "category": "Tech & AI",
+      "icon": "shield",
+      "oneLiner": "Protects company networks, endpoints and data from cyber threats and security incidents.",
+      "quickPitch": "A Cybersecurity Analyst protects a company's computers, networks and data from hackers. They monitor for attacks, investigate alerts, fix weaknesses and respond when something goes wrong.",
+      "dayToDay": [
+        "Monitor security alerts and logs, often in a Security Operations Center (SOC).",
+        "Investigate suspicious activity and respond to incidents.",
+        "Run vulnerability scans and help fix weak points.",
+        "Ensure systems follow security policies and compliance rules.",
+        "Train employees on threats like phishing."
+      ],
+      "altTitles": [
+        "SOC Analyst (L1/L2/L3)",
+        "Information Security Analyst",
+        "Security Engineer",
+        "Incident Responder",
+        "Threat Analyst",
+        "Penetration Tester (ethical hacker)",
+        "GRC Analyst",
+        "IAM Analyst"
+      ],
+      "keyTerms": [
+        {
+          "term": "SOC",
+          "definition": "Security Operations Center — the team watching for attacks 24/7."
+        },
+        {
+          "term": "SIEM",
+          "definition": "Software that collects and analyses security logs (e.g., Splunk, Microsoft Sentinel)."
+        },
+        {
+          "term": "Firewall",
+          "definition": "Barrier controlling what network traffic is allowed in/out."
+        },
+        {
+          "term": "Phishing",
+          "definition": "Fake emails/messages tricking people into giving access or data."
+        },
+        {
+          "term": "Malware / Ransomware",
+          "definition": "Malicious software / malware that locks data and demands payment."
+        },
+        {
+          "term": "Vulnerability / Patch",
+          "definition": "A weakness / the fix for it."
+        },
+        {
+          "term": "Penetration testing",
+          "definition": "Authorised simulated hacking to find weaknesses."
+        },
+        {
+          "term": "IAM",
+          "definition": "Identity & Access Management — who can access what."
+        },
+        {
+          "term": "Incident response",
+          "definition": "Steps taken to contain and recover from an attack."
+        },
+        {
+          "term": "GRC / Compliance",
+          "definition": "Governance, Risk & Compliance — meeting standards like NIST, ISO 27001, SOC 2, HIPAA, PCI-DSS."
+        }
+      ],
+      "toolsSummary": "Splunk, Microsoft Sentinel, QRadar; CrowdStrike, Microsoft Defender (EDR); Wireshark; Nessus, Qualys; Burp Suite, Metasploit (pentest); Okta, Azure AD/Entra ID; Linux, networking (TCP/IP).",
+      "toolsList": [
+        "Splunk, Microsoft Sentinel, QRadar",
+        "CrowdStrike, Microsoft Defender (EDR)",
+        "Wireshark",
+        "Nessus, Qualys",
+        "Burp Suite, Metasploit (pentest)",
+        "Okta, Azure AD/Entra ID",
+        "Linux, networking (TCP/IP)."
+      ],
+      "certificationsSummary": "CompTIA Security+ (most common entry cert), CompTIA CySA+, CEH, CISSP (senior, requires experience), CISM, OSCP (penetration testing), Google Cybersecurity Certificate, cloud security certs (AWS Security Specialty, AZ-500).",
+      "certificationsList": [
+        "CompTIA Security+ (most common entry cert)",
+        "CompTIA CySA+",
+        "CEH",
+        "CISSP (senior",
+        "requires experience)",
+        "CISM",
+        "OSCP (penetration testing)",
+        "Google Cybersecurity Certificate",
+        "cloud security certs (AWS Security Specialty",
+        "AZ-500)."
+      ],
+      "roadmap": {
+        "foundation": "networking basics (IP, DNS, ports), operating systems (Windows/Linux), CompTIA Network+/Security+.",
+        "jobReady": "SIEM tools, log analysis, incident handling, vulnerability scanning, basic scripting (Python/PowerShell), home lab / TryHackMe / HackTheBox.",
+        "advanced": "threat hunting, cloud security, pentesting, security architecture, CISSP/CISM, leadership."
+      },
+      "background": "IT, CS, Networking; many move up from IT Help Desk or System Administrator roles.",
+      "industries": [
+        "Banking",
+        "government/defence",
+        "healthcare",
+        "consulting",
+        "tech",
+        "any company with data."
+      ],
+      "industriesSummary": "Banking, government/defence, healthcare, consulting, tech, any company with data.",
+      "resumeKeywords": [
+        "SIEM (Splunk/Sentinel)",
+        "incident response",
+        "Security+",
+        "NIST",
+        "vulnerability management",
+        "EDR",
+        "cloud security."
+      ],
+      "resumeKeywordsSummary": "SIEM (Splunk/Sentinel), incident response, Security+, NIST, vulnerability management, EDR, cloud security.",
+      "crossQuestions": [
+        {
+          "q": "Is Security+ enough to get a job?",
+          "a": "It's the most common entry-level certification and often appears in job requirements, especially government-related roles. Combined with hands-on lab experience, it strengthens a profile a lot."
+        },
+        {
+          "q": "Do government jobs need clearance?",
+          "a": "Many US government and defence roles require security clearance, which generally requires US citizenship. We'd focus your profile on private-sector roles if that applies."
+        },
+        {
+          "q": "SOC Analyst vs Security Engineer?",
+          "a": "SOC analysts monitor and respond to alerts; security engineers design and build the security systems."
+        },
+        {
+          "q": "Can I get hired remotely as a cybersecurity analyst?",
+          "a": "Yes, many Security Operations Centers (SOC) and threat analysis teams operate remote or hybrid monitoring shifts. However, roles involving classified government data or physical hardware usually require on-site presence. We target roles matching your work preferences."
+        }
+      ],
+      "relatedRoles": [
+        "cloud-engineer",
+        "devops-engineer"
+      ],
+      "salary": {
+        "us": "$95,000 - $145,000 (Median ~$120,000)",
+        "ca": "CAD $85,000 - $125,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the primary function of a Security Operations Center (SOC)?",
+          "options": [
+            "Managing payroll and employee onboarding.",
+            "Monitoring network traffic, system logs, and security alerts 24/7 to identify and respond to attacks.",
+            "Designing company logos and visual marketing material.",
+            "Writing business contracts for enterprise sales."
+          ],
+          "answer": 1,
+          "explanation": "A SOC acts as a 24/7 centralized command post monitoring alerts, investigating telemetry, and stopping cyber intruders."
+        },
+        {
+          "q": "What is a SIEM tool?",
+          "options": [
+            "Security Information and Event Management software (e.g. Splunk, Sentinel) that aggregates and analyzes enterprise security logs.",
+            "A hardware cable used to connect monitors to computers.",
+            "An encrypted USB flash drive.",
+            "A regulatory law passed by the European Parliament."
+          ],
+          "answer": 0,
+          "explanation": "SIEM systems ingest logs across servers, firewalls, and cloud environments to detect anomalies and trigger security alerts."
+        },
+        {
+          "q": "Which certification is widely recognized as the top entry-level credential for Cybersecurity Analysts?",
+          "options": [
+            "CISSP (requires 5 years verifiable experience)",
+            "CompTIA Security+",
+            "PMP (Project Management Professional)",
+            "Six Sigma Black Belt"
+          ],
+          "answer": 1,
+          "explanation": "CompTIA Security+ is standard baseline proof of cybersecurity and networking fundamentals for entry and junior security roles."
+        },
+        {
+          "q": "What does GRC stand for in enterprise information security?",
+          "options": [
+            "General Routing Configuration",
+            "Governance, Risk, and Compliance",
+            "Global Resource Computation",
+            "Graphical Recovery Console"
+          ],
+          "answer": 1,
+          "explanation": "GRC covers corporate governance, assessing security risks, and verifying compliance against regulatory frameworks like SOC 2, ISO 27001, and HIPAA."
+        },
+        {
+          "q": "If a candidate without US citizenship asks about federal defense cybersecurity jobs, what must the rep explain?",
+          "options": [
+            "Guarantee that they can bypass security clearance easily.",
+            "Clarify that US government and defense roles usually require security clearance restricted to US citizens, and recommend focusing on commercial/private sector roles.",
+            "Advise them to apply anyway and claim citizenship.",
+            "Tell them they can never work in tech in North America."
+          ],
+          "answer": 1,
+          "explanation": "Honesty regarding security clearance restrictions protects the candidate's time and directs marketing efforts toward the thriving private enterprise sector."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "cloud-engineer",
+      "name": "Cloud Engineer",
+      "category": "Tech & AI",
+      "icon": "cloud",
+      "oneLiner": "Designs, provisions and runs scalable cloud infrastructure on AWS, Azure, and GCP.",
+      "quickPitch": "A Cloud Engineer builds and manages a company's IT systems on cloud platforms like AWS, Microsoft Azure and Google Cloud, instead of physical servers in an office. They make systems scalable, secure and cost-efficient.",
+      "dayToDay": [
+        "Set up and manage cloud servers, storage, databases and networks.",
+        "Migrate applications from on-premise data centres to the cloud.",
+        "Automate infrastructure using code (Infrastructure as Code).",
+        "Monitor performance, security and costs.",
+        "Troubleshoot outages and issues."
+      ],
+      "altTitles": [
+        "Cloud Engineer",
+        "Cloud Architect (senior)",
+        "AWS Engineer",
+        "Azure Engineer",
+        "Cloud Administrator",
+        "Cloud Infrastructure Engineer",
+        "Site Reliability Engineer (related)",
+        "Cloud Security Engineer"
+      ],
+      "keyTerms": [
+        {
+          "term": "AWS / Azure / GCP",
+          "definition": "The three biggest cloud providers (Amazon, Microsoft, Google)."
+        },
+        {
+          "term": "IaaS / PaaS / SaaS",
+          "definition": "Renting servers / renting a platform to build on / using ready software (e.g., Gmail)."
+        },
+        {
+          "term": "Virtual Machine (EC2)",
+          "definition": "A computer running in the cloud."
+        },
+        {
+          "term": "Object storage (S3)",
+          "definition": "Cloud storage for files."
+        },
+        {
+          "term": "VPC",
+          "definition": "Virtual Private Cloud — a private network in the cloud."
+        },
+        {
+          "term": "Infrastructure as Code (IaC)",
+          "definition": "Creating servers and networks with code; tools Terraform, CloudFormation."
+        },
+        {
+          "term": "Serverless (Lambda)",
+          "definition": "Running code without managing servers."
+        },
+        {
+          "term": "Containers / Kubernetes",
+          "definition": "Packaged apps / the system that runs many containers."
+        },
+        {
+          "term": "Auto-scaling / Load balancer",
+          "definition": "Adding servers when traffic rises / spreading traffic across servers."
+        },
+        {
+          "term": "Cloud migration",
+          "definition": "Moving systems into the cloud."
+        }
+      ],
+      "toolsSummary": "AWS, Azure, GCP; Terraform, CloudFormation, ARM/Bicep; Linux; Docker, Kubernetes (EKS/AKS/GKE); Python, Bash, PowerShell; CloudWatch, Azure Monitor; Git.",
+      "toolsList": [
+        "AWS, Azure, GCP",
+        "Terraform, CloudFormation, ARM/Bicep",
+        "Linux",
+        "Docker, Kubernetes (EKS/AKS/GKE)",
+        "Python, Bash, PowerShell",
+        "CloudWatch, Azure Monitor",
+        "Git."
+      ],
+      "certificationsSummary": "AWS Solutions Architect – Associate (very popular), AWS SysOps Administrator, Azure Administrator (AZ-104), Azure Solutions Architect (AZ-305), Google Associate Cloud Engineer, HashiCorp Terraform Associate, CKA (Kubernetes).",
+      "certificationsList": [
+        "AWS Solutions Architect – Associate (very popular)",
+        "AWS SysOps Administrator",
+        "Azure Administrator (AZ-104)",
+        "Azure Solutions Architect (AZ-305)",
+        "Google Associate Cloud Engineer",
+        "HashiCorp Terraform Associate",
+        "CKA (Kubernetes)."
+      ],
+      "roadmap": {
+        "foundation": "Linux, networking basics, one cloud's fundamentals (AWS Cloud Practitioner / AZ-900).",
+        "jobReady": "core services (compute, storage, networking, IAM), Terraform, scripting, Docker, an associate-level cert, hands-on projects.",
+        "advanced": "multi-cloud, Kubernetes, cloud security, cost optimisation (FinOps), architecture design, professional-level certs."
+      },
+      "background": "IT/CS; often moves up from System Administrator, Network Engineer, or Support roles.",
+      "industries": [
+        "Almost all — tech",
+        "finance",
+        "healthcare",
+        "retail",
+        "consulting",
+        "government."
+      ],
+      "industriesSummary": "Almost all — tech, finance, healthcare, retail, consulting, government.",
+      "resumeKeywords": [
+        "AWS/Azure/GCP",
+        "Terraform",
+        "IaC",
+        "migration",
+        "Kubernetes",
+        "IAM",
+        "cost optimisation",
+        "certification names."
+      ],
+      "resumeKeywordsSummary": "AWS/Azure/GCP, Terraform, IaC, migration, Kubernetes, IAM, cost optimisation, certification names.",
+      "crossQuestions": [
+        {
+          "q": "Should I learn AWS or Azure?",
+          "a": "AWS has the largest market share overall; Azure is very strong in large enterprises that use Microsoft. Many job postings ask for either; one deep plus basic knowledge of the other is a good position."
+        },
+        {
+          "q": "Cloud Engineer vs DevOps Engineer?",
+          "a": "Cloud Engineers focus on building and running cloud infrastructure; DevOps Engineers focus on automating how software is built, tested and released. The roles overlap heavily and many job postings blend them."
+        },
+        {
+          "q": "Are certifications enough without experience?",
+          "a": "They help get shortlisted, but employers want hands-on proof — projects or lab work strengthen the profile."
+        },
+        {
+          "q": "Should I learn multi-cloud (AWS + Azure + GCP) right away?",
+          "a": "It is much better to go deep in one primary cloud first (AWS or Azure) and earn an associate certification. Once you understand core architecture concepts, learning how other providers map those same services is much faster, and employers prefer deep mastery in their specific stack."
+        }
+      ],
+      "relatedRoles": [
+        "devops-engineer",
+        "cybersecurity-analyst",
+        "software-developer"
+      ],
+      "salary": {
+        "us": "$115,000 - $165,000 (Median ~$130,000)",
+        "ca": "CAD $95,000 - $140,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is 'Infrastructure as Code' (IaC)?",
+          "options": [
+            "Writing code on physical printouts kept in a binder.",
+            "Defining, provisioning, and managing IT infrastructure through code and configuration files (e.g. Terraform) rather than manual console clicking.",
+            "A coding boot camp program.",
+            "A network protocol for wireless printers."
+          ],
+          "answer": 1,
+          "explanation": "IaC allows repeatable, automated, version-controlled cloud infrastructure deployment using tools like Terraform and CloudFormation."
+        },
+        {
+          "q": "What is the primary difference between a Cloud Engineer and a DevOps Engineer?",
+          "options": [
+            "Cloud Engineers build cloud servers, networks, and storage; DevOps Engineers focus specifically on automating the software CI/CD delivery lifecycle.",
+            "Cloud Engineers do not use computers.",
+            "DevOps Engineers only install physical fiber-optic cables.",
+            "There is no overlap whatsoever between the two domains."
+          ],
+          "answer": 0,
+          "explanation": "Cloud Engineers specialize in cloud infrastructure and networking; DevOps Engineers emphasize automated building, testing, and deployment pipelines."
+        },
+        {
+          "q": "Which cloud provider currently holds the highest enterprise adoption among organizations heavily invested in Microsoft environments?",
+          "options": [
+            "AWS",
+            "Microsoft Azure",
+            "Google Cloud Platform (GCP)",
+            "DigitalOcean"
+          ],
+          "answer": 1,
+          "explanation": "Microsoft Azure integrates seamlessly with Active Directory, Windows Server, Office 365, and enterprise .NET environments."
+        },
+        {
+          "q": "What does a Virtual Private Cloud (VPC) provide?",
+          "options": [
+            "A free online storage drive for personal photos.",
+            "An isolated, private virtual network within a public cloud provider where resources can run securely.",
+            "A virtual reality headset for developers.",
+            "A public web server open to all internet traffic by default."
+          ],
+          "answer": 1,
+          "explanation": "A VPC provides network isolation, subnets, routing tables, and security gateways in the cloud."
+        },
+        {
+          "q": "Which certification is widely considered the flagship benchmark for AWS cloud engineers?",
+          "options": [
+            "AWS Certified Solutions Architect – Associate",
+            "Adobe Certified Professional",
+            "Certified Scrum Master",
+            "Google Ads Certification"
+          ],
+          "answer": 0,
+          "explanation": "AWS Solutions Architect – Associate is the most recognized industry benchmark testing core AWS services, architecture, security, and cost efficiency."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "devops-engineer",
+      "name": "DevOps Engineer",
+      "category": "Tech & AI",
+      "icon": "git-merge",
+      "oneLiner": "Automates build, test, and release CI/CD pipelines to deliver software quickly and reliably.",
+      "quickPitch": "A DevOps Engineer helps software teams release code faster and more reliably by automating building, testing and deployment. They bridge the gap between developers (who write code) and operations (who run systems).",
+      "dayToDay": [
+        "Build and maintain CI/CD pipelines (automatic build, test, deploy).",
+        "Manage containers and Kubernetes clusters.",
+        "Automate infrastructure with code.",
+        "Set up monitoring and alerting.",
+        "Respond to production issues and improve reliability."
+      ],
+      "altTitles": [
+        "DevOps Engineer",
+        "Site Reliability Engineer (SRE)",
+        "Platform Engineer",
+        "Build & Release Engineer",
+        "DevSecOps Engineer",
+        "Infrastructure Engineer"
+      ],
+      "keyTerms": [
+        {
+          "term": "CI/CD",
+          "definition": "Continuous Integration / Continuous Delivery — automatically testing and releasing code."
+        },
+        {
+          "term": "Pipeline",
+          "definition": "The automated sequence of build → test → deploy steps."
+        },
+        {
+          "term": "Docker / container",
+          "definition": "Packaging an app with everything it needs to run anywhere."
+        },
+        {
+          "term": "Kubernetes (K8s)",
+          "definition": "System that runs and manages many containers."
+        },
+        {
+          "term": "Infrastructure as Code",
+          "definition": "Creating infrastructure using code (Terraform, Ansible)."
+        },
+        {
+          "term": "Configuration management",
+          "definition": "Keeping servers set up consistently (Ansible, Chef, Puppet)."
+        },
+        {
+          "term": "Monitoring / Observability",
+          "definition": "Watching system health using metrics, logs and traces."
+        },
+        {
+          "term": "Git / Version control",
+          "definition": "Tracking code changes; GitHub/GitLab/Bitbucket."
+        },
+        {
+          "term": "SRE",
+          "definition": "Site Reliability Engineering — Google's approach to running reliable systems."
+        },
+        {
+          "term": "DevSecOps",
+          "definition": "Adding security checks into the DevOps pipeline."
+        }
+      ],
+      "toolsSummary": "Git, GitHub Actions, Jenkins, GitLab CI, Azure DevOps; Docker, Kubernetes, Helm; Terraform, Ansible; AWS/Azure/GCP; Prometheus, Grafana, Datadog, ELK; Linux, Bash, Python.",
+      "toolsList": [
+        "Git, GitHub Actions, Jenkins, GitLab CI, Azure DevOps",
+        "Docker, Kubernetes, Helm",
+        "Terraform, Ansible",
+        "AWS/Azure/GCP",
+        "Prometheus, Grafana, Datadog, ELK",
+        "Linux, Bash, Python."
+      ],
+      "certificationsSummary": "AWS DevOps Engineer – Professional, Azure DevOps Engineer Expert (AZ-400), CKA / CKAD (Kubernetes), HashiCorp Terraform Associate, Docker Certified Associate.",
+      "certificationsList": [
+        "AWS DevOps Engineer – Professional",
+        "Azure DevOps Engineer Expert (AZ-400)",
+        "CKA / CKAD (Kubernetes)",
+        "HashiCorp Terraform Associate",
+        "Docker Certified Associate."
+      ],
+      "roadmap": {
+        "foundation": "Linux, networking, Git, scripting (Bash/Python), one cloud.",
+        "jobReady": "CI/CD tool (Jenkins/GitHub Actions), Docker, Kubernetes basics, Terraform, monitoring tools, end-to-end pipeline project.",
+        "advanced": "Kubernetes at scale, SRE practices (SLOs), DevSecOps, platform engineering, architecture."
+      },
+      "background": "CS/IT; often from System Admin, Software Developer or Cloud roles.",
+      "industries": [
+        "Tech/SaaS",
+        "finance",
+        "e-commerce",
+        "telecom",
+        "consulting."
+      ],
+      "industriesSummary": "Tech/SaaS, finance, e-commerce, telecom, consulting.",
+      "resumeKeywords": [
+        "CI/CD",
+        "Jenkins/GitHub Actions",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "AWS/Azure",
+        "monitoring",
+        "automation results (\"reduced deployment time from 2 hours to 15 minutes\")."
+      ],
+      "resumeKeywordsSummary": "CI/CD, Jenkins/GitHub Actions, Docker, Kubernetes, Terraform, AWS/Azure, monitoring, automation results (\"reduced deployment time from 2 hours to 15 minutes\").",
+      "crossQuestions": [
+        {
+          "q": "Is DevOps a role or a culture?",
+          "a": "Both. It started as a way of working between dev and ops teams, and now it's also a widely used job title."
+        },
+        {
+          "q": "DevOps vs SRE?",
+          "a": "Very similar toolsets; SRE puts more emphasis on reliability targets and on-call operations, while DevOps emphasises delivery automation."
+        },
+        {
+          "q": "Do DevOps engineers need coding?",
+          "a": "Yes, scripting (Python, Bash) and writing pipeline/infrastructure code are core skills, though usually less application coding than a software developer."
+        },
+        {
+          "q": "How much application programming (Java/Python) do I need to know?",
+          "a": "DevOps engineers don't usually write commercial application features from scratch; you need solid scripting skills (Python, Bash) to automate CI/CD pipelines, write test harnesses, and manage Infrastructure as Code (Terraform). We highlight your automation scripts prominently."
+        }
+      ],
+      "relatedRoles": [
+        "cloud-engineer",
+        "software-developer"
+      ],
+      "salary": {
+        "us": "$120,000 - $170,000 (Median ~$138,000)",
+        "ca": "CAD $100,000 - $145,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What does CI/CD stand for in modern software engineering?",
+          "options": [
+            "Continuous Integration / Continuous Delivery (or Deployment)",
+            "Centralized Intelligence / Customer Delivery",
+            "Code Inspection / Certified Development",
+            "Computer Interface / Cloud Device"
+          ],
+          "answer": 0,
+          "explanation": "CI/CD automates the building, testing, and shipping of code updates safely and quickly to production."
+        },
+        {
+          "q": "What is the primary benefit of containerization using Docker?",
+          "options": [
+            "It physically shrinks the size of computer microchips.",
+            "It packages application code together with its libraries and dependencies so it executes identically in any environment.",
+            "It eliminates the need to ever write unit tests.",
+            "It translates Python code directly into assembly language."
+          ],
+          "answer": 1,
+          "explanation": "Docker ensures environmental consistency from local developer laptops to testing staging and production clusters."
+        },
+        {
+          "q": "What is Kubernetes (K8s)?",
+          "options": [
+            "A specialized Linux text editor.",
+            "An open-source container orchestration engine that automates deploying, scaling, and managing containerized applications.",
+            "A relational database query engine.",
+            "A proprietary hardware router manufactured by Cisco."
+          ],
+          "answer": 1,
+          "explanation": "Kubernetes is the industry-standard platform for clustering, auto-scaling, and healing containers in production."
+        },
+        {
+          "q": "How does an SRE (Site Reliability Engineer) differ slightly from a traditional DevOps role?",
+          "options": [
+            "SREs never touch code.",
+            "SRE applies software engineering principles specifically to operational reliability, defining SLAs/SLOs and error budgets.",
+            "DevOps engineers only work on mainframe computers.",
+            "SRE is exclusively a hardware repair role."
+          ],
+          "answer": 1,
+          "explanation": "Originated at Google, SRE uses software engineering discipline to manage availability, latency, performance, and incident response."
+        },
+        {
+          "q": "Which metric demonstrates the most impactful resume bullet for a DevOps Engineer?",
+          "options": [
+            "'Read 15 books on technology.'",
+            "'Reduced deployment time from 2 hours to 15 minutes through automated Jenkins/GitHub Actions CI/CD pipelines.'",
+            "'Liked 500 LinkedIn posts about technology.'",
+            "'Attended daily team meetings on time.'"
+          ],
+          "answer": 1,
+          "explanation": "Quantifiable engineering impact (speed of deployment, uptime improvement, error reduction) is what employers look for."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "software-developer",
+      "name": "Software Developer",
+      "category": "Tech & AI",
+      "icon": "code",
+      "oneLiner": "Designs, writes, tests, and maintains applications and back-end services across tech stacks.",
+      "quickPitch": "A Software Developer writes the code that builds apps, websites and systems — from mobile banking apps to the back-end systems that process orders. They design, code, test and maintain software.",
+      "dayToDay": [
+        "Write and review code for new features.",
+        "Fix bugs and improve performance.",
+        "Write tests to make sure code works.",
+        "Work with product managers and designers in Agile sprints.",
+        "Use Git to collaborate with other developers."
+      ],
+      "altTitles": [
+        "Software Engineer",
+        "Software Developer",
+        "Front-end Developer",
+        "Back-end Developer",
+        "Full-stack Developer",
+        "Java Developer",
+        ".NET Developer",
+        "Python Developer",
+        "Mobile (iOS/Android) Developer",
+        "SDE I/II/III"
+      ],
+      "keyTerms": [
+        {
+          "term": "Front-end / Back-end / Full-stack",
+          "definition": "What users see (UI) / server, logic and databases / both."
+        },
+        {
+          "term": "Programming language",
+          "definition": "Java, Python, C#, JavaScript/TypeScript, Go, C++."
+        },
+        {
+          "term": "Framework",
+          "definition": "Ready-made toolkit: React, Angular (front-end); Spring Boot, .NET, Django, Node.js (back-end)."
+        },
+        {
+          "term": "API / REST",
+          "definition": "A way for software systems to talk to each other."
+        },
+        {
+          "term": "Database (SQL / NoSQL)",
+          "definition": "Where data is stored — MySQL, PostgreSQL / MongoDB."
+        },
+        {
+          "term": "Microservices",
+          "definition": "Building an app as many small independent services."
+        },
+        {
+          "term": "Agile / Scrum / Sprint",
+          "definition": "Iterative way of working in 1–2 week cycles."
+        },
+        {
+          "term": "Git / Pull Request",
+          "definition": "Version control / proposing code changes for review."
+        },
+        {
+          "term": "Unit testing",
+          "definition": "Automatic tests for small pieces of code."
+        },
+        {
+          "term": "Data structures & algorithms (DSA)",
+          "definition": "Core CS concepts heavily tested in US tech interviews."
+        }
+      ],
+      "toolsSummary": "Java/Spring Boot, C#/.NET, Python/Django/FastAPI, JavaScript/TypeScript, React, Angular, Node.js; SQL & NoSQL databases; Git; Docker; AWS/Azure; Jira; VS Code, IntelliJ.",
+      "toolsList": [
+        "Java/Spring Boot, C#/.NET, Python/Django/FastAPI, JavaScript/TypeScript, React, Angular, Node.js",
+        "SQL & NoSQL databases",
+        "Git",
+        "Docker",
+        "AWS/Azure",
+        "Jira",
+        "VS Code, IntelliJ."
+      ],
+      "certificationsSummary": "Less important than skills and projects. Useful extras: AWS Developer Associate, Azure Developer (AZ-204), Oracle Java certifications, Meta Front-End/Back-End certificates.",
+      "certificationsList": [
+        "Less important than skills and projects. Useful extras: AWS Developer Associate",
+        "Azure Developer (AZ-204)",
+        "Oracle Java certifications",
+        "Meta Front-End/Back-End certificates."
+      ],
+      "roadmap": {
+        "foundation": "one language deeply (Java, Python or JavaScript), programming basics, Git, SQL.",
+        "jobReady": "one framework stack (e.g., React + Node, or Java + Spring Boot), REST APIs, databases, testing, DSA practice (LeetCode), deployed portfolio projects.",
+        "advanced": "system design, microservices, cloud, performance, mentoring, architecture."
+      },
+      "background": "CS/IT/Engineering degrees, bootcamps, self-taught.",
+      "industries": [
+        "Every industry."
+      ],
+      "industriesSummary": "Every industry.",
+      "resumeKeywords": [
+        "language + framework names",
+        "REST APIs",
+        "microservices",
+        "cloud",
+        "Agile",
+        "testing",
+        "quantified impact."
+      ],
+      "resumeKeywordsSummary": "language + framework names, REST APIs, microservices, cloud, Agile, testing, quantified impact.",
+      "crossQuestions": [
+        {
+          "q": "Which stack is most in demand?",
+          "a": "Java, Python and JavaScript/TypeScript (React, Node) appear very frequently in postings, along with C#/.NET in enterprises. We market you for the stack where your experience is strongest."
+        },
+        {
+          "q": "Software Developer vs Software Engineer?",
+          "a": "Mostly used interchangeably in job postings; \"Engineer\" is the more common title at larger tech companies."
+        },
+        {
+          "q": "Do I need LeetCode?",
+          "a": "Many US tech interviews include coding/DSA rounds, so practice is strongly recommended, especially for larger companies."
+        },
+        {
+          "q": "Is full-stack better than specializing in just front-end or back-end?",
+          "a": "Both paths have strong market demand. Early-stage companies and startups love full-stack developers for speed and versatility, while larger enterprises often hire specialized back-end (Java/Spring Boot, C#/.NET) or front-end (React) engineers. We market you toward whichever side your portfolio demonstrates best."
+        }
+      ],
+      "relatedRoles": [
+        "devops-engineer",
+        "product-manager",
+        "ai-ml-engineer"
+      ],
+      "salary": {
+        "us": "$105,000 - $160,000 (Median ~$127,000)",
+        "ca": "CAD $85,000 - $130,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the distinction between Front-end and Back-end development?",
+          "options": [
+            "Front-end is everything the user sees and interacts with (UI); Back-end handles data storage, business logic, and servers.",
+            "Front-end is only for graphic designers with no coding; Back-end requires no databases.",
+            "Front-end is written in C++; Back-end is written in HTML.",
+            "There is no distinction in modern software."
+          ],
+          "answer": 0,
+          "explanation": "Front-end focuses on the client UI/browser interface, while Back-end handles business logic, database queries, and APIs."
+        },
+        {
+          "q": "What is a REST API?",
+          "options": [
+            "A tool that forces developers to take regular breaks.",
+            "An architectural style for network communication allowing applications to exchange data over HTTP using standard methods like GET, POST, PUT, DELETE.",
+            "A special brand of computer monitor.",
+            "An encryption algorithm used exclusively by banks."
+          ],
+          "answer": 1,
+          "explanation": "REST APIs are the universal standard for client-server and microservice communication across the web."
+        },
+        {
+          "q": "What does a Pull Request (PR) represent in Git collaboration?",
+          "options": [
+            "A request to buy new computer hardware.",
+            "A proposal to merge code changes from one branch into another, inviting peer review and automated testing before inclusion.",
+            "An error notification indicating a crash.",
+            "A request to terminate a developer's contract."
+          ],
+          "answer": 1,
+          "explanation": "Pull Requests allow peer review, discussion, automated linting, and continuous integration checks before merging changes."
+        },
+        {
+          "q": "Why are Data Structures and Algorithms (DSA) frequently practiced on platforms like LeetCode?",
+          "options": [
+            "They are legally mandated by the US Department of Labor.",
+            "Many US tech interviews include technical coding rounds that evaluate algorithmic problem solving and time/space complexity.",
+            "DSA is only used for video game graphics.",
+            "It replaces the need to learn SQL."
+          ],
+          "answer": 1,
+          "explanation": "Technical coding screens at North American employers commonly test core algorithmic problem-solving and efficiency."
+        },
+        {
+          "q": "Which programming languages represent the highest enterprise demand across US/Canada job boards?",
+          "options": [
+            "COBOL and Fortran",
+            "Java, Python, JavaScript/TypeScript, and C#/.NET",
+            "Pascal and Visual Basic 6",
+            "Perl and ActionScript"
+          ],
+          "answer": 1,
+          "explanation": "Java, Python, TypeScript/JavaScript, and C# dominate modern enterprise backend and full-stack software development postings."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "prompt-engineer",
+      "name": "Prompt Engineer",
+      "category": "Tech & AI",
+      "icon": "message-square",
+      "oneLiner": "Crafts instructions and evaluates workflows for Large Language Models to deliver reliable AI outputs.",
+      "quickPitch": "A Prompt Engineer designs the instructions (\"prompts\") given to AI models like ChatGPT or Claude so they produce accurate, useful, safe results — and builds and tests AI-powered workflows for businesses. It's a newer role that often blends with AI Engineer and AI product roles.",
+      "dayToDay": [
+        "Write, test and refine prompts for AI tasks (summaries, support bots, content, data extraction).",
+        "Build evaluation sets to measure AI output quality.",
+        "Connect AI models to company data and tools (RAG, APIs).",
+        "Reduce errors such as \"hallucinations\".",
+        "Document best practices and train teams to use AI."
+      ],
+      "altTitles": [
+        "Prompt Engineer",
+        "AI Prompt Specialist",
+        "Generative AI Engineer",
+        "LLM Engineer",
+        "Conversational AI Designer",
+        "AI Solutions Specialist",
+        "AI Trainer / Content Specialist"
+      ],
+      "keyTerms": [
+        {
+          "term": "Prompt",
+          "definition": "The instruction or input given to an AI model."
+        },
+        {
+          "term": "LLM",
+          "definition": "Large Language Model (GPT, Claude, Gemini, Llama)."
+        },
+        {
+          "term": "Zero-shot / Few-shot",
+          "definition": "Asking without examples / giving a few examples in the prompt."
+        },
+        {
+          "term": "Chain-of-thought",
+          "definition": "Encouraging the model to reason step by step."
+        },
+        {
+          "term": "System prompt",
+          "definition": "Background instructions that set the AI's role and rules."
+        },
+        {
+          "term": "Hallucination",
+          "definition": "When AI confidently makes up wrong information."
+        },
+        {
+          "term": "Token / Context window",
+          "definition": "Unit of text the model processes / how much text it can consider at once."
+        },
+        {
+          "term": "RAG",
+          "definition": "Giving the AI relevant documents so it answers from them."
+        },
+        {
+          "term": "Evaluation (evals)",
+          "definition": "Systematic testing of AI output quality."
+        },
+        {
+          "term": "Temperature",
+          "definition": "Setting that controls how creative vs predictable outputs are."
+        }
+      ],
+      "toolsSummary": "OpenAI, Anthropic, Google APIs; LangChain, LlamaIndex; Python; prompt-testing/eval tools; vector databases; Zapier/Make for automation; Jupyter.",
+      "toolsList": [
+        "OpenAI, Anthropic, Google APIs",
+        "LangChain, LlamaIndex",
+        "Python",
+        "prompt-testing/eval tools",
+        "vector databases",
+        "Zapier/Make for automation",
+        "Jupyter."
+      ],
+      "certificationsSummary": "No single standard yet. Relevant: DeepLearning.AI short courses, vendor courses from OpenAI/Anthropic/Google, Azure AI Engineer (AI-102), AWS AI Practitioner.",
+      "certificationsList": [
+        "No single standard yet. Relevant: DeepLearning.AI short courses",
+        "vendor courses from OpenAI/Anthropic/Google",
+        "Azure AI Engineer (AI-102)",
+        "AWS AI Practitioner."
+      ],
+      "roadmap": {
+        "foundation": "how LLMs work at a high level, prompting techniques, strong writing and logical thinking.",
+        "jobReady": "Python basics, calling AI APIs, RAG basics, building evaluations, a portfolio of AI workflows with before/after results.",
+        "advanced": "agent/tool-use design, fine-tuning, AI safety and guardrails, AI product strategy."
+      },
+      "background": "Mixed — CS, linguistics, writing, data, domain experts (legal, healthcare, marketing).",
+      "industries": [
+        "Tech",
+        "AI startups",
+        "consulting",
+        "marketing agencies",
+        "customer-support platforms",
+        "enterprises adopting AI."
+      ],
+      "industriesSummary": "Tech, AI startups, consulting, marketing agencies, customer-support platforms, enterprises adopting AI.",
+      "resumeKeywords": [
+        "LLM",
+        "prompt design",
+        "RAG",
+        "evals",
+        "Python",
+        "API integration",
+        "GenAI",
+        "measurable outcomes."
+      ],
+      "resumeKeywordsSummary": "LLM, prompt design, RAG, evals, Python, API integration, GenAI, measurable outcomes.",
+      "crossQuestions": [
+        {
+          "q": "Is Prompt Engineer a real, lasting job?",
+          "a": "Pure \"prompt-only\" titles are fewer than broader GenAI/AI Engineer roles, so we usually market these candidates for the broader AI titles too, highlighting prompt design as a key skill."
+        },
+        {
+          "q": "Do I need coding?",
+          "a": "It helps a lot. Most roles expect at least basic Python and API skills alongside prompt design."
+        },
+        {
+          "q": "How do I prove my skills?",
+          "a": "A portfolio showing problems solved with AI, how you tested quality, and results."
+        },
+        {
+          "q": "Will Prompt Engineering become obsolete as AI models improve?",
+          "a": "The role is maturing into AI Systems and LLM Engineering — combining prompt optimization with Python APIs, evaluation frameworks, and RAG pipelines. Candidates who combine prompt design with coding and data retrieval skills have strong long-term career demand."
+        }
+      ],
+      "relatedRoles": [
+        "ai-ml-engineer",
+        "product-manager"
+      ],
+      "salary": {
+        "us": "$90,000 - $150,000 (Median ~$115,000)",
+        "ca": "CAD $80,000 - $130,000",
+        "source": "Emerging Role / Tech Salary Survey Data",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is 'Hallucination' in the context of Large Language Models?",
+          "options": [
+            "When the GPU overheats and shuts down.",
+            "When an AI model generates factually incorrect or fabricated information with high confidence.",
+            "When an AI model translates English into French.",
+            "When the user inputs non-English characters."
+          ],
+          "answer": 1,
+          "explanation": "Hallucination refers to models generating confident, believable-sounding assertions that are completely untrue."
+        },
+        {
+          "q": "What is the difference between Zero-shot and Few-shot prompting?",
+          "options": [
+            "Zero-shot provides no prompt text; Few-shot provides ten paragraphs of code.",
+            "Zero-shot asks the model to perform a task without demonstration examples; Few-shot provides a few high-quality input-output examples in the prompt.",
+            "Zero-shot uses paid API tokens; Few-shot is always free.",
+            "Few-shot only works for image models."
+          ],
+          "answer": 1,
+          "explanation": "Few-shot prompting provides context examples illustrating desired formatting and reasoning steps before asking the question."
+        },
+        {
+          "q": "What is 'Chain-of-Thought' (CoT) prompting?",
+          "options": [
+            "A technique that encourages the model to break down complex reasoning step-by-step before producing a final answer.",
+            "Linking multiple computers with physical cables.",
+            "A security protocol that encrypts prompt texts.",
+            "A method for training smaller models from scratch."
+          ],
+          "answer": 0,
+          "explanation": "Asking a model to 'think step by step' forces it to output intermediate reasoning steps, drastically reducing errors in logic and math."
+        },
+        {
+          "q": "Does a modern Prompt Engineer need programming skills?",
+          "options": [
+            "No, writing English prompts in a browser interface is all that is ever required.",
+            "Yes, practical roles typically require basic Python and API scripting to run automated evaluations, connect vector stores, and build workflows.",
+            "Only assembly language is useful.",
+            "Only hardware electrical soldering."
+          ],
+          "answer": 1,
+          "explanation": "Enterprise AI roles expect Python integration with APIs, LangChain, LlamaIndex, and systematic test harnesses."
+        },
+        {
+          "q": "How does a sales rep market a candidate targeting Prompt Engineering?",
+          "options": [
+            "Market them exclusively with the narrow title 'Prompt Writer'.",
+            "Position them broadly across GenAI Engineer, AI Solutions Specialist, and AI Product roles while highlighting prompt evaluation and RAG workflows as core skills.",
+            "Tell them to abandon AI and learn manual bookkeeping.",
+            "Guarantee them an immediate VP role at an AI lab."
+          ],
+          "answer": 1,
+          "explanation": "Broadening target titles into GenAI Engineer and AI Solutions Specialist dramatically increases interview opportunities."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "civil-engineer",
+      "name": "Civil Engineer",
+      "category": "Engineering, Construction & Manufacturing",
+      "icon": "hard-hat",
+      "oneLiner": "Designs and oversees physical infrastructure including roads, bridges, buildings, and water systems.",
+      "quickPitch": "A Civil Engineer designs and oversees construction of infrastructure — roads, bridges, buildings, water and sewer systems, dams and airports — making sure they are safe, durable and meet codes.",
+      "dayToDay": [
+        "Design structures and infrastructure using software (AutoCAD, Civil 3D, Revit).",
+        "Perform calculations for loads, materials and drainage.",
+        "Prepare drawings, specifications and cost estimates.",
+        "Visit sites to inspect work and solve problems.",
+        "Ensure compliance with building codes and environmental rules."
+      ],
+      "altTitles": [
+        "Civil Engineer",
+        "Structural Engineer",
+        "Transportation Engineer",
+        "Geotechnical Engineer",
+        "Water Resources Engineer",
+        "Site/Land Development Engineer",
+        "Project Engineer",
+        "EIT (Engineer in Training)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Structural engineering",
+          "definition": "Designing the \"skeleton\" of buildings and bridges so they stand safely."
+        },
+        {
+          "term": "Geotechnical",
+          "definition": "Study of soil and rock to design foundations."
+        },
+        {
+          "term": "Transportation engineering",
+          "definition": "Roads, highways, traffic and transit design."
+        },
+        {
+          "term": "Hydraulics / Stormwater",
+          "definition": "Managing water flow and drainage."
+        },
+        {
+          "term": "AutoCAD / Civil 3D",
+          "definition": "Drafting and civil design software."
+        },
+        {
+          "term": "BIM",
+          "definition": "Building Information Modelling — 3D digital models of buildings (Revit)."
+        },
+        {
+          "term": "Building codes",
+          "definition": "Legal safety rules (e.g., IBC in US, National Building Code in Canada)."
+        },
+        {
+          "term": "FE / PE exams (US)",
+          "definition": "Fundamentals of Engineering exam → EIT; Professional Engineer licence after experience."
+        },
+        {
+          "term": "P.Eng (Canada)",
+          "definition": "Professional Engineer licence via provincial bodies (e.g., PEO in Ontario)."
+        },
+        {
+          "term": "Site inspection",
+          "definition": "Checking construction work matches design and codes."
+        }
+      ],
+      "toolsSummary": "AutoCAD, Civil 3D, Revit, STAAD.Pro, SAP2000, ETABS, MicroStation, HEC-RAS, ArcGIS, MS Project, Excel.",
+      "toolsList": [
+        "AutoCAD, Civil 3D, Revit, STAAD.Pro, SAP2000, ETABS, MicroStation, HEC-RAS, ArcGIS, MS Project, Excel."
+      ],
+      "certificationsSummary": "FE exam / EIT, PE licence (US); EIT then P.Eng (Canada); PMP (for project-focused roles); LEED (green building).",
+      "certificationsList": [
+        "FE exam / EIT",
+        "PE licence (US); EIT then P.Eng (Canada); PMP (for project-focused roles); LEED (green building)."
+      ],
+      "roadmap": {
+        "foundation": "civil engineering degree, mechanics, materials, AutoCAD.",
+        "jobReady": "Civil 3D/Revit, one analysis tool (STAAD/ETABS), codes knowledge, FE/EIT, internship or site experience.",
+        "advanced": "PE / P.Eng licence, project management, design lead, specialisation (structural, geotechnical, water)."
+      },
+      "background": "B.E./B.Tech/B.Sc. in Civil Engineering; Master's common for structural.",
+      "industries": [
+        "Consulting engineering firms",
+        "government (DOTs",
+        "municipalities)",
+        "construction companies",
+        "real estate developers",
+        "utilities."
+      ],
+      "industriesSummary": "Consulting engineering firms, government (DOTs, municipalities), construction companies, real estate developers, utilities.",
+      "resumeKeywords": [
+        "AutoCAD/Civil 3D",
+        "structural analysis",
+        "site development",
+        "codes (IBC/ACI/AASHTO)",
+        "EIT/PE",
+        "project values."
+      ],
+      "resumeKeywordsSummary": "AutoCAD/Civil 3D, structural analysis, site development, codes (IBC/ACI/AASHTO), EIT/PE, project values.",
+      "crossQuestions": [
+        {
+          "q": "Is my overseas degree valid?",
+          "a": "Licensing (PE/P.Eng) has specific credential-evaluation steps through the state board or provincial engineering body. Many candidates work as EIT/Project Engineers while pursuing licensure."
+        },
+        {
+          "q": "Do I need PE to get a job?",
+          "a": "Not for entry-level; it becomes important for senior roles where you sign/stamp drawings."
+        },
+        {
+          "q": "Civil vs Structural Engineer?",
+          "a": "Structural is a specialisation within civil, focused on buildings and bridges."
+        },
+        {
+          "q": "How important is 3D BIM / Revit compared to traditional 2D AutoCAD?",
+          "a": "2D AutoCAD remains standard for site planning and municipal permit drawings, but Revit and 3D BIM are increasingly required for commercial buildings and multi-disciplinary coordination. Highlighting any BIM modeling experience gives your profile a competitive edge."
+        }
+      ],
+      "relatedRoles": [
+        "construction-manager"
+      ],
+      "salary": {
+        "us": "$85,000 - $130,000 (Median ~$95,000)",
+        "ca": "CAD $78,000 - $115,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the key difference between a Civil Engineer and a Construction Manager?",
+          "options": [
+            "Civil Engineers work only in banks; Construction Managers work only in chemical laboratories.",
+            "Civil Engineers primarily focus on design calculations, plans, and compliance; Construction Managers focus on physical site execution, scheduling, workers, and budgets.",
+            "There is no difference between design and execution.",
+            "Civil Engineers do not need a degree."
+          ],
+          "answer": 1,
+          "explanation": "Civil engineers design and calculate structural/site systems; construction managers execute the physical build on site."
+        },
+        {
+          "q": "What do the FE and PE designations mean in the United States?",
+          "options": [
+            "Federal Employee and Private Employee",
+            "Fundamentals of Engineering (yielding EIT status) and Professional Engineer (legal license to stamp drawings)",
+            "Factory Electrician and Plant Electrician",
+            "Foreman Exam and Project Exam"
+          ],
+          "answer": 1,
+          "explanation": "The FE exam qualifies graduates as Engineers-in-Training (EIT); the PE exam and required experience grant the license to stamp engineering drawings."
+        },
+        {
+          "q": "What is BIM in modern infrastructure and building design?",
+          "options": [
+            "Basic Industrial Material",
+            "Building Information Modeling — 3D intelligent model-based process (e.g. Autodesk Revit) for architecture, engineering, and construction.",
+            "Bridge Inspection Manual",
+            "Building Insurance Metric"
+          ],
+          "answer": 1,
+          "explanation": "BIM tools like Revit create intelligent 3D models containing rich geometric and specification data."
+        },
+        {
+          "q": "What CAD software is standard for land development, grading, and civil infrastructure?",
+          "options": [
+            "Adobe Photoshop",
+            "Autodesk Civil 3D",
+            "Microsoft Paint",
+            "Canva"
+          ],
+          "answer": 1,
+          "explanation": "Autodesk Civil 3D is the industry standard for civil grading, corridor design, pipe networks, and surveying."
+        },
+        {
+          "q": "Can a candidate with an overseas civil engineering degree get a job in North America before completing the PE license?",
+          "options": [
+            "No, it is strictly illegal to touch engineering drawings without a PE license.",
+            "Yes, many work successfully as EITs, Designers, or Project Engineers under the direct supervision of licensed PEs while pursuing licensure.",
+            "Only if they retake an undergraduate degree from scratch.",
+            "Only in federal government positions."
+          ],
+          "answer": 1,
+          "explanation": "Junior and mid-level engineers work under licensed P.E. supervision while completing state credential evaluations and exam requirements."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "construction-manager",
+      "name": "Construction Manager",
+      "category": "Engineering, Construction & Manufacturing",
+      "icon": "briefcase",
+      "oneLiner": "Plans, coordinates, and manages construction builds from start to finish on time and within budget.",
+      "quickPitch": "A Construction Manager plans and runs construction projects from start to finish — managing schedule, budget, workers, subcontractors, safety and quality — so a building or infrastructure project is delivered on time and on budget.",
+      "dayToDay": [
+        "Plan project schedules and budgets.",
+        "Coordinate subcontractors, suppliers and site teams.",
+        "Track progress and handle change orders.",
+        "Enforce safety (OSHA in US) and quality standards.",
+        "Communicate with clients, architects and engineers."
+      ],
+      "altTitles": [
+        "Construction Manager",
+        "Project Manager (Construction)",
+        "Site Manager",
+        "Superintendent",
+        "Project Engineer",
+        "Assistant Project Manager",
+        "Construction Coordinator"
+      ],
+      "keyTerms": [
+        {
+          "term": "General Contractor (GC)",
+          "definition": "Main company responsible for the build."
+        },
+        {
+          "term": "Subcontractor",
+          "definition": "Specialist hired for parts (electrical, plumbing)."
+        },
+        {
+          "term": "RFI",
+          "definition": "Request for Information — formal question to designers."
+        },
+        {
+          "term": "Submittals",
+          "definition": "Documents/samples sent for approval before use."
+        },
+        {
+          "term": "Change order",
+          "definition": "Approved change to scope, cost or time."
+        },
+        {
+          "term": "Gantt chart / Critical path",
+          "definition": "Schedule visual / the sequence of tasks that determines the end date."
+        },
+        {
+          "term": "Bid / Estimate",
+          "definition": "Price proposal / cost calculation."
+        },
+        {
+          "term": "Punch list",
+          "definition": "Final list of items to fix before completion."
+        },
+        {
+          "term": "OSHA",
+          "definition": "US workplace safety rules (OSHA 30 is a common certificate)."
+        },
+        {
+          "term": "Commercial vs Residential vs Infrastructure",
+          "definition": "Office/retail / homes / roads, bridges, utilities."
+        }
+      ],
+      "toolsSummary": "Procore, Primavera P6, MS Project, Bluebeam, AutoCAD (reading drawings), PlanGrid/Autodesk Build, Excel.",
+      "toolsList": [
+        "Procore, Primavera P6, MS Project, Bluebeam, AutoCAD (reading drawings), PlanGrid/Autodesk Build, Excel."
+      ],
+      "certificationsSummary": "PMP, CCM (Certified Construction Manager), OSHA 30, LEED AP, Gold Seal (Canada).",
+      "certificationsList": [
+        "PMP",
+        "CCM (Certified Construction Manager)",
+        "OSHA 30",
+        "LEED AP",
+        "Gold Seal (Canada)."
+      ],
+      "roadmap": {
+        "foundation": "reading drawings, construction methods, materials, safety basics.",
+        "jobReady": "scheduling (P6/MS Project), cost control, Procore, contracts basics, OSHA 30, site experience as Project Engineer/APM.",
+        "advanced": "full project ownership, large budgets, client management, PMP/CCM."
+      },
+      "background": "Civil Engineering, Construction Management, Architecture, or site experience.",
+      "industries": [
+        "General contractors",
+        "real estate developers",
+        "infrastructure",
+        "energy",
+        "government."
+      ],
+      "industriesSummary": "General contractors, real estate developers, infrastructure, energy, government.",
+      "resumeKeywords": [
+        "project size ($ value)",
+        "Procore",
+        "P6",
+        "scheduling",
+        "cost control",
+        "safety record",
+        "OSHA 30",
+        "PMP."
+      ],
+      "resumeKeywordsSummary": "project size ($ value), Procore, P6, scheduling, cost control, safety record, OSHA 30, PMP.",
+      "crossQuestions": [
+        {
+          "q": "Is my overseas site experience counted?",
+          "a": "Yes, experience counts; we highlight project scale, type and responsibilities. US/Canada-specific safety and software knowledge (OSHA, Procore) strengthens the profile."
+        },
+        {
+          "q": "Construction Manager vs Civil Engineer?",
+          "a": "Civil engineers mainly design; construction managers mainly execute and manage the building process."
+        },
+        {
+          "q": "Do I need PMP?",
+          "a": "Helpful and often preferred, not always mandatory."
+        },
+        {
+          "q": "Can I transition from a field superintendent or project engineer into construction management?",
+          "a": "Yes, direct site and field experience is highly respected by General Contractors because you understand subcontractor coordination, real job site logistics, and OSHA safety standards. We highlight your completed project values ($), safety record, and scheduling software skills."
+        }
+      ],
+      "relatedRoles": [
+        "civil-engineer"
+      ],
+      "salary": {
+        "us": "$90,000 - $145,000 (Median ~$105,000)",
+        "ca": "CAD $85,000 - $130,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What does an RFI stand for in construction project management?",
+          "options": [
+            "Ready For Inspection",
+            "Request for Information — a formal written inquiry from the contractor to the architect/engineer clarifying drawings or specifications.",
+            "Required Field Invoice",
+            "Rebar Foundation Installation"
+          ],
+          "answer": 1,
+          "explanation": "An RFI formally documents questions or gaps in blueprints and architectural specs."
+        },
+        {
+          "q": "What is a 'Change Order'?",
+          "options": [
+            "A request to switch worker shifts.",
+            "An approved, legally binding modification to the contract scope, budget, or completion date.",
+            "An order to return defective lumber.",
+            "A tool used to measure soil density."
+          ],
+          "answer": 1,
+          "explanation": "Change orders capture alterations in project scope, materials, or unforeseen conditions that adjust schedule and billing."
+        },
+        {
+          "q": "Which project management software is widely recognized as the market leader on commercial job sites?",
+          "options": [
+            "Procore",
+            "Final Cut Pro",
+            "Audacity",
+            "Notepad"
+          ],
+          "answer": 0,
+          "explanation": "Procore is the dominant cloud construction management platform connecting field supervisors, GCs, and subs."
+        },
+        {
+          "q": "What is OSHA 30 certification in the US?",
+          "options": [
+            "A 30-day driving test.",
+            "A 30-hour comprehensive training course on occupational safety and hazard recognition for construction supervisors.",
+            "A certification for crane operators only.",
+            "An environmental tax certificate."
+          ],
+          "answer": 1,
+          "explanation": "OSHA 30 is the industry-standard safety credential required for superintendents, foremen, and project engineers on job sites."
+        },
+        {
+          "q": "What is a 'Punch List' in construction?",
+          "options": [
+            "A list of punches thrown during workplace disputes.",
+            "A list of minor deficiencies, repairs, and incomplete items compiled at near-completion before final payment and handover.",
+            "A daily attendance sheet for manual laborers.",
+            "A list of equipment parts to purchase."
+          ],
+          "answer": 1,
+          "explanation": "The punch list ensures every detail, finish, and fixture meets contract quality before substantial completion."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "mechanical-engineer",
+      "name": "Mechanical Engineer",
+      "category": "Engineering, Construction & Manufacturing",
+      "icon": "settings",
+      "oneLiner": "Designs, models, and tests mechanical devices, machines, thermal systems, and equipment.",
+      "quickPitch": "A Mechanical Engineer designs, builds and tests machines and mechanical systems — engines, HVAC systems, robots, medical devices, manufacturing equipment — anything that moves or uses energy.",
+      "dayToDay": [
+        "Design parts and products in CAD software.",
+        "Run calculations and simulations (stress, heat, fluid flow).",
+        "Build and test prototypes.",
+        "Work with manufacturing to make designs producible.",
+        "Improve existing products for cost, quality or performance."
+      ],
+      "altTitles": [
+        "Mechanical Engineer",
+        "Design Engineer",
+        "Mechanical Design Engineer",
+        "HVAC Engineer",
+        "Product Development Engineer",
+        "Manufacturing Engineer",
+        "R&D Engineer"
+      ],
+      "keyTerms": [
+        {
+          "term": "CAD",
+          "definition": "Computer-Aided Design — SolidWorks, AutoCAD, CATIA, Creo, NX."
+        },
+        {
+          "term": "FEA",
+          "definition": "Finite Element Analysis — simulating stress/strain on parts (ANSYS)."
+        },
+        {
+          "term": "CFD",
+          "definition": "Simulating fluid and air flow."
+        },
+        {
+          "term": "GD&T",
+          "definition": "Standard symbols on drawings defining allowed tolerances."
+        },
+        {
+          "term": "Thermodynamics / Heat transfer",
+          "definition": "Science of energy and heat movement."
+        },
+        {
+          "term": "HVAC",
+          "definition": "Heating, ventilation and air conditioning systems."
+        },
+        {
+          "term": "Prototype",
+          "definition": "Early working model for testing."
+        },
+        {
+          "term": "DFM",
+          "definition": "Design for Manufacturing — designing parts that are easy and cheap to make."
+        },
+        {
+          "term": "BOM",
+          "definition": "Bill of Materials — list of all parts."
+        },
+        {
+          "term": "PLM",
+          "definition": "Product Lifecycle Management software (Windchill, Teamcenter)."
+        }
+      ],
+      "toolsSummary": "SolidWorks, AutoCAD, CATIA, Creo, Siemens NX, ANSYS, MATLAB, Revit MEP (for HVAC), Windchill/Teamcenter, Excel.",
+      "toolsList": [
+        "SolidWorks, AutoCAD, CATIA, Creo, Siemens NX, ANSYS, MATLAB, Revit MEP (for HVAC), Windchill/Teamcenter, Excel."
+      ],
+      "certificationsSummary": "CSWA/CSWP (SolidWorks), FE/PE or EIT/P.Eng, Six Sigma Green Belt, GD&T certification (ASME).",
+      "certificationsList": [
+        "CSWA/CSWP (SolidWorks)",
+        "FE/PE or EIT/P.Eng",
+        "Six Sigma Green Belt",
+        "GD&T certification (ASME)."
+      ],
+      "roadmap": {
+        "foundation": "mechanics, thermodynamics, materials, CAD basics.",
+        "jobReady": "SolidWorks/Creo proficiency, GD&T, FEA basics, DFM, internship/project experience.",
+        "advanced": "system design, advanced simulation, leading product development, PE/P.Eng."
+      },
+      "background": "Mechanical Engineering degree.",
+      "industries": [
+        "Automotive",
+        "aerospace",
+        "manufacturing",
+        "HVAC/building services",
+        "energy",
+        "medical devices",
+        "consumer products."
+      ],
+      "industriesSummary": "Automotive, aerospace, manufacturing, HVAC/building services, energy, medical devices, consumer products.",
+      "resumeKeywords": [
+        "SolidWorks/CATIA",
+        "GD&T",
+        "FEA/ANSYS",
+        "product design",
+        "prototyping",
+        "DFM",
+        "industry name."
+      ],
+      "resumeKeywordsSummary": "SolidWorks/CATIA, GD&T, FEA/ANSYS, product design, prototyping, DFM, industry name.",
+      "crossQuestions": [
+        {
+          "q": "Mechanical vs Manufacturing Engineer?",
+          "a": "Mechanical/design engineers create the product design; manufacturing engineers figure out how to produce it efficiently in the factory."
+        },
+        {
+          "q": "Which CAD software matters?",
+          "a": "SolidWorks is very common in mid-size companies; CATIA and NX are common in automotive/aerospace; Creo in industrial equipment. We highlight what you've used."
+        },
+        {
+          "q": "Is GD&T important?",
+          "a": "Yes, it's commonly listed in design-engineering job descriptions."
+        },
+        {
+          "q": "Do I need simulation and FEA experience to get a product design role?",
+          "a": "Core 3D CAD modeling (SolidWorks/Creo) and GD&T are the primary requirements for design engineers; FEA (ANSYS) is a major asset for specialized structural or thermal roles. We highlight whatever practical simulation and prototype testing you have done."
+        }
+      ],
+      "relatedRoles": [
+        "process-engineer",
+        "electrical-engineer"
+      ],
+      "salary": {
+        "us": "$85,000 - $135,000 (Median ~$99,000)",
+        "ca": "CAD $75,000 - $118,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is FEA (Finite Element Analysis)?",
+          "options": [
+            "Federal Energy Assessment",
+            "A computerized simulation method (e.g. using ANSYS) to predict how physical parts react to forces, vibration, heat, and stress.",
+            "Final Expense Accounting",
+            "Factory Electrical Audit"
+          ],
+          "answer": 1,
+          "explanation": "FEA breaks down complex geometries into mesh elements to analyze stress, deformation, and thermal performance."
+        },
+        {
+          "q": "What is GD&T (Geometric Dimensioning and Tolerancing)?",
+          "options": [
+            "A programming language for robotics.",
+            "A standardized system of symbols and rules on engineering drawings defining the allowable variation in geometric characteristics.",
+            "A brand of carbon fiber composite.",
+            "A legal patent document."
+          ],
+          "answer": 1,
+          "explanation": "GD&T specifies exact manufacturing tolerances and datum references to ensure parts fit together reliably."
+        },
+        {
+          "q": "What does DFM stand for in product development?",
+          "options": [
+            "Design for Manufacturing — designing components so they can be produced easily and cost-effectively.",
+            "Direct Frequency Modulation",
+            "Data File Management",
+            "Differential Fluid Movement"
+          ],
+          "answer": 0,
+          "explanation": "DFM optimizes part geometry, tooling, and materials to lower fabrication costs and prevent production defects."
+        },
+        {
+          "q": "Which CAD modeling software is most prevalent in mid-sized product design and manufacturing companies?",
+          "options": [
+            "SolidWorks",
+            "Microsoft Word",
+            "GIMP",
+            "VLC Media Player"
+          ],
+          "answer": 0,
+          "explanation": "Dassault Systèmes SolidWorks is the industry workhorse for 3D mechanical modeling, assemblies, and drafting."
+        },
+        {
+          "q": "What is a Bill of Materials (BOM)?",
+          "options": [
+            "A monthly electricity bill.",
+            "A comprehensive list of raw materials, assemblies, components, and quantities required to manufacture an end product.",
+            "A certificate of hazardous waste disposal.",
+            "A shipping manifest for export customs."
+          ],
+          "answer": 1,
+          "explanation": "The BOM is the master recipe detailing every screw, plate, sub-assembly, and drawing part number needed to assemble a machine."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "electrical-engineer",
+      "name": "Electrical Engineer",
+      "category": "Engineering, Construction & Manufacturing",
+      "icon": "zap",
+      "oneLiner": "Designs and tests electrical distribution systems, power grids, circuits, and industrial controls.",
+      "quickPitch": "An Electrical Engineer designs and maintains systems that generate, distribute and use electricity — from power grids and building electrical systems to circuit boards inside electronic devices.",
+      "dayToDay": [
+        "Design electrical systems, circuits or power distribution.",
+        "Create schematics and wiring diagrams.",
+        "Perform load calculations and select equipment.",
+        "Test, troubleshoot and commission systems.",
+        "Ensure compliance with electrical codes (NEC in US, CEC in Canada)."
+      ],
+      "altTitles": [
+        "Electrical Engineer",
+        "Power Systems Engineer",
+        "Electrical Design Engineer",
+        "Controls Engineer",
+        "Electronics/Hardware Engineer",
+        "Substation Engineer",
+        "Instrumentation Engineer",
+        "PCB Design Engineer"
+      ],
+      "keyTerms": [
+        {
+          "term": "Power vs Electronics",
+          "definition": "Large-scale electricity (grids, buildings) vs small circuits (devices, chips)."
+        },
+        {
+          "term": "AC / DC",
+          "definition": "Alternating current / direct current."
+        },
+        {
+          "term": "Schematic",
+          "definition": "Diagram of an electrical circuit."
+        },
+        {
+          "term": "PLC",
+          "definition": "Programmable Logic Controller — computer controlling machines in factories."
+        },
+        {
+          "term": "SCADA",
+          "definition": "Software to monitor and control industrial/utility systems."
+        },
+        {
+          "term": "Load calculation",
+          "definition": "Working out how much power a system needs."
+        },
+        {
+          "term": "Substation / Switchgear",
+          "definition": "Facility that changes voltage / equipment that controls and protects circuits."
+        },
+        {
+          "term": "NEC / CEC",
+          "definition": "National Electrical Code (US) / Canadian Electrical Code."
+        },
+        {
+          "term": "PCB",
+          "definition": "Printed Circuit Board."
+        },
+        {
+          "term": "Arc flash / Short circuit study",
+          "definition": "Electrical safety and fault analysis studies."
+        }
+      ],
+      "toolsSummary": "AutoCAD Electrical, ETAP, SKM PowerTools, MATLAB/Simulink, PLC software (Rockwell/Allen-Bradley, Siemens TIA Portal), Altium/OrCAD (PCB), Revit MEP.",
+      "toolsList": [
+        "AutoCAD Electrical, ETAP, SKM PowerTools, MATLAB/Simulink, PLC software (Rockwell/Allen-Bradley, Siemens TIA Portal), Altium/OrCAD (PCB), Revit MEP."
+      ],
+      "certificationsSummary": "FE/PE (US), EIT/P.Eng (Canada), PLC vendor certifications, NETA (testing).",
+      "certificationsList": [
+        "FE/PE (US)",
+        "EIT/P.Eng (Canada)",
+        "PLC vendor certifications",
+        "NETA (testing)."
+      ],
+      "roadmap": {
+        "foundation": "circuit theory, electromagnetics, power systems basics, AutoCAD.",
+        "jobReady": "specialisation tools (ETAP for power, PLC programming for controls, Altium for electronics), codes (NEC/CEC), internship/project.",
+        "advanced": "system design leadership, protection studies, renewable/grid integration, PE/P.Eng."
+      },
+      "background": "Electrical/Electronics Engineering degree.",
+      "industries": [
+        "Utilities",
+        "renewable energy",
+        "construction/MEP consulting",
+        "manufacturing",
+        "semiconductors",
+        "automotive (EVs)",
+        "data centres."
+      ],
+      "industriesSummary": "Utilities, renewable energy, construction/MEP consulting, manufacturing, semiconductors, automotive (EVs), data centres.",
+      "resumeKeywords": [
+        "power distribution",
+        "ETAP",
+        "NEC",
+        "PLC/SCADA",
+        "AutoCAD Electrical",
+        "substation",
+        "renewable",
+        "PE/EIT."
+      ],
+      "resumeKeywordsSummary": "power distribution, ETAP, NEC, PLC/SCADA, AutoCAD Electrical, substation, renewable, PE/EIT.",
+      "crossQuestions": [
+        {
+          "q": "Power or controls — which is in demand?",
+          "a": "Both are in demand in different sectors: power with utilities, renewables and data centres; controls/PLC with manufacturing and automation. We target based on your experience."
+        },
+        {
+          "q": "Electrical vs Electronics Engineer?",
+          "a": "Electrical often means power and building systems; electronics means circuit boards and devices."
+        },
+        {
+          "q": "Do I need to know NEC?",
+          "a": "For US building/power roles, it's frequently required; for Canada, the CEC."
+        },
+        {
+          "q": "Is PLC automation or power systems analysis more in demand?",
+          "a": "Both areas have high demand in different sectors: power distribution (ETAP, substations) is booming with utilities, renewable energy, and data center growth; PLC/controls automation (Rockwell, Siemens) is in high demand across manufacturing and robotics. We target the sector aligned with your background."
+        }
+      ],
+      "relatedRoles": [
+        "mechanical-engineer",
+        "process-engineer"
+      ],
+      "salary": {
+        "us": "$90,000 - $140,000 (Median ~$106,000)",
+        "ca": "CAD $80,000 - $125,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is a PLC (Programmable Logic Controller)?",
+          "options": [
+            "A personal laptop computer.",
+            "An industrial digital computer ruggedized for controlling manufacturing processes, assembly lines, and robotic equipment.",
+            "A type of high-voltage circuit breaker.",
+            "A solar panel inverter."
+          ],
+          "answer": 1,
+          "explanation": "PLCs (from Rockwell/Allen-Bradley, Siemens) run deterministic automation logic in factories and plants."
+        },
+        {
+          "q": "What code governs safe electrical installations and inspections in the United States?",
+          "options": [
+            "The National Electrical Code (NEC / NFPA 70)",
+            "The Uniform Commercial Code",
+            "The International Roadway Code",
+            "The Digital Millennium Copyright Act"
+          ],
+          "answer": 0,
+          "explanation": "The NEC (National Electrical Code) is the benchmark standard adopted across US states and municipalities for electrical safety."
+        },
+        {
+          "q": "What software tool is the standard for power system design, load flow, and short circuit analysis?",
+          "options": [
+            "ETAP or SKM PowerTools",
+            "Adobe InDesign",
+            "Audacity",
+            "WordPress"
+          ],
+          "answer": 0,
+          "explanation": "ETAP and SKM are the recognized standard simulation packages for power distribution, arc flash studies, and load calculations."
+        },
+        {
+          "q": "What is the difference between power systems engineering and electronics engineering?",
+          "options": [
+            "Power focuses on high-voltage generation, transmission grids, and building distribution; Electronics focuses on low-voltage circuits, microchips, and PCBs.",
+            "Power engineers never work with electricity.",
+            "Electronics engineers only install power poles.",
+            "There is no difference."
+          ],
+          "answer": 0,
+          "explanation": "Power deals with megawatts, substations, and utilities, while electronics centers on microchips, circuit boards, and signal processing."
+        },
+        {
+          "q": "What does an Arc Flash study evaluate?",
+          "options": [
+            "The brightness of welding torches.",
+            "The thermal energy and boundary distances released during an electrical fault to determine safety PPE for technicians.",
+            "The battery life of smartphones.",
+            "The speed of light in optical cables."
+          ],
+          "answer": 1,
+          "explanation": "Arc flash studies analyze blast energy and calculate safe approach boundaries and PPE ratings required to protect electricians."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "process-engineer",
+      "name": "Process Engineer",
+      "category": "Engineering, Construction & Manufacturing",
+      "icon": "activity",
+      "oneLiner": "Optimizes chemical, industrial, and manufacturing processes for yield, safety, and efficiency.",
+      "quickPitch": "A Process Engineer designs, runs and improves the processes used to make products at scale — in chemical plants, oil & gas, pharma, food, semiconductors or manufacturing — making them safer, faster, cheaper and higher quality.",
+      "dayToDay": [
+        "Monitor production processes and analyse data.",
+        "Troubleshoot quality or yield problems.",
+        "Design improvements and run trials.",
+        "Create process flow diagrams and standard operating procedures (SOPs).",
+        "Apply Lean and Six Sigma methods to cut waste and variation."
+      ],
+      "altTitles": [
+        "Process Engineer",
+        "Chemical Process Engineer",
+        "Manufacturing Process Engineer",
+        "Process Improvement Engineer",
+        "Continuous Improvement Engineer",
+        "Production Engineer"
+      ],
+      "keyTerms": [
+        {
+          "term": "PFD / P&ID",
+          "definition": "Process Flow Diagram / Piping & Instrumentation Diagram."
+        },
+        {
+          "term": "Yield",
+          "definition": "Percentage of good output from input."
+        },
+        {
+          "term": "Lean",
+          "definition": "Method to remove waste from processes."
+        },
+        {
+          "term": "Six Sigma / DMAIC",
+          "definition": "Data-driven method to reduce defects (Define, Measure, Analyse, Improve, Control)."
+        },
+        {
+          "term": "SPC",
+          "definition": "Statistical Process Control — monitoring processes with control charts."
+        },
+        {
+          "term": "Root Cause Analysis (RCA)",
+          "definition": "Finding the true cause of a problem (5 Whys, fishbone)."
+        },
+        {
+          "term": "SOP",
+          "definition": "Standard Operating Procedure — written step-by-step instructions."
+        },
+        {
+          "term": "Scale-up",
+          "definition": "Moving a process from lab/pilot to full production."
+        },
+        {
+          "term": "HAZOP",
+          "definition": "Structured safety study of a process."
+        },
+        {
+          "term": "Kaizen",
+          "definition": "Continuous small improvements."
+        }
+      ],
+      "toolsSummary": "Aspen HYSYS/Plus, Minitab, JMP, MATLAB, AutoCAD/P&ID tools, SAP, Excel, PLC/SCADA basics, Power BI.",
+      "toolsList": [
+        "Aspen HYSYS/Plus, Minitab, JMP, MATLAB, AutoCAD/P&ID tools, SAP, Excel, PLC/SCADA basics, Power BI."
+      ],
+      "certificationsSummary": "Lean Six Sigma Green/Black Belt, PE/P.Eng, PMP, industry-specific safety certifications.",
+      "certificationsList": [
+        "Lean Six Sigma Green/Black Belt",
+        "PE/P.Eng",
+        "PMP",
+        "industry-specific safety certifications."
+      ],
+      "roadmap": {
+        "foundation": "chemical/mechanical engineering fundamentals, mass & energy balance, reading P&IDs.",
+        "jobReady": "Lean/Six Sigma tools, SPC, Minitab, RCA, plant/internship experience.",
+        "advanced": "process design, scale-up, capital projects, Black Belt, leading improvement programs."
+      },
+      "background": "Chemical, Mechanical, Industrial or Materials Engineering.",
+      "industries": [
+        "Oil & gas",
+        "chemicals",
+        "pharmaceuticals",
+        "food & beverage",
+        "semiconductors",
+        "automotive",
+        "plastics."
+      ],
+      "industriesSummary": "Oil & gas, chemicals, pharmaceuticals, food & beverage, semiconductors, automotive, plastics.",
+      "resumeKeywords": [
+        "process optimisation",
+        "yield improvement %",
+        "Lean Six Sigma",
+        "SPC",
+        "RCA",
+        "P&ID",
+        "Aspen",
+        "cost savings $."
+      ],
+      "resumeKeywordsSummary": "process optimisation, yield improvement %, Lean Six Sigma, SPC, RCA, P&ID, Aspen, cost savings $.",
+      "crossQuestions": [
+        {
+          "q": "Process vs Manufacturing Engineer?",
+          "a": "Very similar. Process engineers focus on the process (often continuous, like chemical plants); manufacturing engineers often focus on assembly lines and equipment."
+        },
+        {
+          "q": "Is Six Sigma important?",
+          "a": "It's frequently listed as preferred and helps prove improvement skills with data."
+        },
+        {
+          "q": "I worked in a plant in India — relevant?",
+          "a": "Yes; we highlight the process type, improvements made and measurable results."
+        },
+        {
+          "q": "What industries pay the highest compensation for Process Engineers?",
+          "a": "Pharmaceuticals, biotechnology, oil & gas, and semiconductor fabrication typically offer the highest compensation because their processes involve tight tolerances, expensive raw materials, and strict regulatory standards."
+        }
+      ],
+      "relatedRoles": [
+        "mechanical-engineer",
+        "validation-engineer"
+      ],
+      "salary": {
+        "us": "$88,000 - $135,000 (Median ~$102,000)",
+        "ca": "CAD $80,000 - $120,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What does a P&ID represent in chemical and industrial processing?",
+          "options": [
+            "Personal & Identification Document",
+            "Piping and Instrumentation Diagram — a detailed schematic showing piping, valves, instrumentation, and control loops.",
+            "Plant & Inventory Directory",
+            "Project & Invoice Detail"
+          ],
+          "answer": 1,
+          "explanation": "P&IDs show the interconnected piping, sensors, pumps, heat exchangers, and control loops that run a plant."
+        },
+        {
+          "q": "What does DMAIC stand for in Six Sigma process improvement?",
+          "options": [
+            "Define, Measure, Analyze, Improve, Control",
+            "Design, Market, Assemble, Inspect, Clean",
+            "Divide, Multiply, Add, Integrate, Calculate",
+            "Direct, Manage, Audit, Investigate, Check"
+          ],
+          "answer": 0,
+          "explanation": "DMAIC is the standard data-driven improvement methodology for eliminating process defects and reducing variability."
+        },
+        {
+          "q": "What is SPC (Statistical Process Control)?",
+          "options": [
+            "A secret company formula.",
+            "Using statistical methods and control charts to monitor and control process parameters within acceptable limits.",
+            "A federal environmental tax.",
+            "An inventory management barcode format."
+          ],
+          "answer": 1,
+          "explanation": "SPC tracks critical process variables over time using control charts to identify and correct deviations before defects occur."
+        },
+        {
+          "q": "What is a HAZOP study?",
+          "options": [
+            "Hazard and Operability study — a structured systematic examination of a planned process to identify safety hazards and operational risks.",
+            "Hardware Allocation Zone Operation",
+            "Hazardous Operations Permit",
+            "Hourly Assembly Zone Optimization"
+          ],
+          "answer": 0,
+          "explanation": "A HAZOP analyzes potential guide words (more flow, less pressure, reverse) to prevent industrial disasters."
+        },
+        {
+          "q": "What is 'Scale-up' in process engineering?",
+          "options": [
+            "Weighing raw materials on an electronic scale.",
+            "Transitioning a chemical or biochemical process from laboratory/pilot bench scale to commercial manufacturing volume.",
+            "Hiring additional operators for a night shift.",
+            "Adding more columns to an Excel worksheet."
+          ],
+          "answer": 1,
+          "explanation": "Scale-up solves heat and mass transfer challenges when expanding a 5-liter lab recipe into a 10,000-liter commercial reactor."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "validation-engineer",
+      "name": "Validation Engineer",
+      "category": "Engineering, Construction & Manufacturing",
+      "icon": "check-circle",
+      "oneLiner": "Documents and tests equipment, processes, and systems to ensure compliance with FDA/GMP standards.",
+      "quickPitch": "A Validation Engineer proves — with documented testing — that equipment, processes, software and facilities consistently produce products that meet quality and regulatory requirements. It's a key role in highly regulated industries like pharma, biotech and medical devices.",
+      "dayToDay": [
+        "Write validation protocols (test plans) and reports.",
+        "Execute IQ/OQ/PQ testing on equipment and processes.",
+        "Validate computer systems (CSV) used in production and labs.",
+        "Document deviations and work with Quality Assurance.",
+        "Support audits by the FDA (US) or Health Canada."
+      ],
+      "altTitles": [
+        "Validation Engineer",
+        "Validation Specialist",
+        "CQV Engineer (Commissioning",
+        "Qualification & Validation)",
+        "Computer System Validation (CSV) Engineer",
+        "Process Validation Engineer",
+        "Quality Engineer (related)"
+      ],
+      "keyTerms": [
+        {
+          "term": "GMP / cGMP",
+          "definition": "(current) Good Manufacturing Practice — rules for making safe medicines/devices."
+        },
+        {
+          "term": "FDA / Health Canada",
+          "definition": "US / Canadian regulators."
+        },
+        {
+          "term": "IQ / OQ / PQ",
+          "definition": "Installation Qualification (installed correctly) / Operational (works across ranges) / Performance (works consistently in real use)."
+        },
+        {
+          "term": "CQV",
+          "definition": "Commissioning, Qualification & Validation."
+        },
+        {
+          "term": "CSV / CSA",
+          "definition": "Computer System Validation / Computer Software Assurance (newer risk-based FDA approach)."
+        },
+        {
+          "term": "21 CFR Part 11",
+          "definition": "FDA rule on electronic records and signatures."
+        },
+        {
+          "term": "GAMP 5",
+          "definition": "Industry guide for validating computerised systems."
+        },
+        {
+          "term": "Protocol / Deviation",
+          "definition": "Test plan / documented departure from plan."
+        },
+        {
+          "term": "CAPA",
+          "definition": "Corrective and Preventive Action."
+        },
+        {
+          "term": "Cleaning validation",
+          "definition": "Proving equipment cleaning removes residues."
+        }
+      ],
+      "toolsSummary": "Kneat, ValGenesis (digital validation), TrackWise, Veeva, MasterControl (QMS), SAP, LIMS, Kaye validators (temperature mapping), MS Office.",
+      "toolsList": [
+        "Kneat, ValGenesis (digital validation), TrackWise, Veeva, MasterControl (QMS), SAP, LIMS, Kaye validators (temperature mapping), MS Office."
+      ],
+      "certificationsSummary": "ASQ CQE (Certified Quality Engineer), Six Sigma, ISPE/GAMP training, ASQ CQA.",
+      "certificationsList": [
+        "ASQ CQE (Certified Quality Engineer)",
+        "Six Sigma",
+        "ISPE/GAMP training",
+        "ASQ CQA."
+      ],
+      "roadmap": {
+        "foundation": "GMP basics, life-science or engineering fundamentals, technical writing.",
+        "jobReady": "IQ/OQ/PQ execution, protocol writing, 21 CFR Part 11, GAMP 5, deviation/CAPA handling.",
+        "advanced": "validation master plans, CSA, leading CQV projects, audit leadership."
+      },
+      "background": "Chemical, Mechanical, Biomedical, Electrical Engineering; Pharmacy; Biotechnology.",
+      "industries": [
+        "Pharmaceuticals",
+        "biotech",
+        "medical devices",
+        "food",
+        "CDMOs",
+        "engineering consultancies serving pharma."
+      ],
+      "industriesSummary": "Pharmaceuticals, biotech, medical devices, food, CDMOs, engineering consultancies serving pharma.",
+      "resumeKeywords": [
+        "IQ/OQ/PQ",
+        "CQV",
+        "CSV",
+        "GMP",
+        "21 CFR Part 11",
+        "GAMP 5",
+        "FDA audits",
+        "Kneat/ValGenesis."
+      ],
+      "resumeKeywordsSummary": "IQ/OQ/PQ, CQV, CSV, GMP, 21 CFR Part 11, GAMP 5, FDA audits, Kneat/ValGenesis.",
+      "crossQuestions": [
+        {
+          "q": "Validation vs Verification?",
+          "a": "Verification checks \"did we build it right\" against specs; validation checks \"does it consistently meet the intended use\" — in regulated industries, validation is formal and documented."
+        },
+        {
+          "q": "Validation vs QA?",
+          "a": "QA oversees the overall quality system; validation engineers do the technical testing and documentation that QA reviews."
+        },
+        {
+          "q": "Is CSV experience separate?",
+          "a": "Yes, Computer System Validation is a specialisation; candidates with both equipment and CSV experience can target more roles."
+        },
+        {
+          "q": "Can I transition from general laboratory QA into Validation Engineering?",
+          "a": "Yes, laboratory QA gives you strong grounding in GMP and documentation standards. Transitioning to validation involves executing equipment qualification protocols (IQ/OQ/PQ) or Computer System Validation (CSV), and we highlight your regulatory documentation skills to make this shift."
+        }
+      ],
+      "relatedRoles": [
+        "process-engineer"
+      ],
+      "salary": {
+        "us": "$85,000 - $130,000 (Median ~$98,000)",
+        "ca": "CAD $78,000 - $115,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What does the qualification lifecycle sequence 'IQ / OQ / PQ' stand for?",
+          "options": [
+            "Inspection Quality, Output Quality, Production Quality",
+            "Installation Qualification, Operational Qualification, Performance Qualification",
+            "Internal Query, Official Query, Public Query",
+            "Initial Quote, Order Quote, Price Quote"
+          ],
+          "answer": 1,
+          "explanation": "IQ verifies correct installation; OQ tests operational limits; PQ proves repeatable performance in simulated production conditions."
+        },
+        {
+          "q": "What does FDA 21 CFR Part 11 regulate?",
+          "options": [
+            "Food labeling on cereal boxes.",
+            "Criteria under which electronic records and electronic signatures are considered trustworthy, reliable, and equivalent to paper records.",
+            "The speed of packaging machinery.",
+            "Import duties on medical plastics."
+          ],
+          "answer": 1,
+          "explanation": "21 CFR Part 11 establishes FDA requirements for audit trails, user authentication, and data integrity in computerized systems."
+        },
+        {
+          "q": "What is GAMP 5?",
+          "options": [
+            "A video gaming console.",
+            "Good Automated Manufacturing Practice guideline — a risk-based approach to compliant GxP computerized systems.",
+            "A medical diagnostic machine.",
+            "An emergency evacuation procedure."
+          ],
+          "answer": 1,
+          "explanation": "GAMP 5 (by ISPE) is the premier international framework for validating life-sciences software and computer systems."
+        },
+        {
+          "q": "What is a CAPA in pharmaceutical quality management?",
+          "options": [
+            "Capacity Planning Analysis",
+            "Corrective and Preventive Action — systemic actions taken to investigate and resolve non-conformances and prevent recurrence.",
+            "Capital Asset Purchase Agreement",
+            "Certified Analytical Pharmacy Assistant"
+          ],
+          "answer": 1,
+          "explanation": "CAPA is a mandatory regulatory process for systematically investigating defects and preventing future failures."
+        },
+        {
+          "q": "What is the core distinction between Verification and Validation?",
+          "options": [
+            "Verification tests: 'Did we build the system right according to specification?'; Validation tests: 'Did we build the right system that consistently meets its intended use in production?'",
+            "Verification is only done by accountants; Validation is done by sales reps.",
+            "There is no difference; they are exact synonyms.",
+            "Verification is only done after a product has already expired."
+          ],
+          "answer": 0,
+          "explanation": "Verification checks technical specifications; validation provides documented evidence that the process reliably achieves intended clinical/quality results."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "digital-marketing-specialist",
+      "name": "Digital Marketing Specialist",
+      "category": "Business, Marketing & Operations",
+      "icon": "trending-up",
+      "oneLiner": "Drives traffic, customer acquisition, and sales through SEO, paid ads, content, and analytics.",
+      "quickPitch": "A Digital Marketer promotes a company's products online — through Google search, social media, email, ads and websites — to attract customers, generate leads and increase sales, and measures results with data.",
+      "dayToDay": [
+        "Run paid ad campaigns (Google Ads, Meta/LinkedIn Ads).",
+        "Improve website ranking on Google (SEO).",
+        "Create and schedule social media and email campaigns.",
+        "Track performance in Google Analytics and report results.",
+        "Run A/B tests on ads, emails and landing pages."
+      ],
+      "altTitles": [
+        "Digital Marketing Specialist/Executive",
+        "SEO Specialist",
+        "PPC/SEM Specialist",
+        "Paid Media Specialist",
+        "Social Media Manager",
+        "Performance Marketer",
+        "Email Marketing Specialist",
+        "Growth Marketer",
+        "Content Marketer"
+      ],
+      "keyTerms": [
+        {
+          "term": "SEO",
+          "definition": "Search Engine Optimisation — ranking higher in free Google results."
+        },
+        {
+          "term": "SEM / PPC",
+          "definition": "Search Engine Marketing / Pay-Per-Click ads."
+        },
+        {
+          "term": "CTR",
+          "definition": "Click-Through Rate — % of people who click."
+        },
+        {
+          "term": "Conversion / Conversion rate",
+          "definition": "Desired action (purchase, sign-up) / % who do it."
+        },
+        {
+          "term": "CPC / CPA / ROAS",
+          "definition": "Cost per click / cost per acquisition / return on ad spend."
+        },
+        {
+          "term": "Funnel",
+          "definition": "Customer journey: awareness → consideration → purchase."
+        },
+        {
+          "term": "Landing page",
+          "definition": "Page built specifically for a campaign."
+        },
+        {
+          "term": "Marketing automation",
+          "definition": "Software sending targeted emails automatically (HubSpot, Marketo)."
+        },
+        {
+          "term": "GA4",
+          "definition": "Google Analytics 4 — website analytics tool."
+        },
+        {
+          "term": "KPI",
+          "definition": "Key Performance Indicator — main success metric."
+        }
+      ],
+      "toolsSummary": "Google Ads, Meta Ads Manager, LinkedIn Ads, GA4, Google Tag Manager, SEMrush, Ahrefs, HubSpot, Mailchimp, Hootsuite, Canva, WordPress, Looker Studio.",
+      "toolsList": [
+        "Google Ads, Meta Ads Manager, LinkedIn Ads, GA4, Google Tag Manager, SEMrush, Ahrefs, HubSpot, Mailchimp, Hootsuite, Canva, WordPress, Looker Studio."
+      ],
+      "certificationsSummary": "Google Ads certifications, Google Analytics certification, HubSpot Inbound/Content Marketing, Meta Certified Digital Marketing Associate, SEMrush Academy.",
+      "certificationsList": [
+        "Google Ads certifications",
+        "Google Analytics certification",
+        "HubSpot Inbound/Content Marketing",
+        "Meta Certified Digital Marketing Associate",
+        "SEMrush Academy."
+      ],
+      "roadmap": {
+        "foundation": "marketing basics, funnel, content, social media, GA4 basics.",
+        "jobReady": "run real campaigns (even small budgets), Google Ads + Meta Ads, SEO basics, email marketing, reporting, free Google/HubSpot certs.",
+        "advanced": "performance strategy, budget ownership, marketing automation, CRO, team leadership."
+      },
+      "background": "Marketing, Business, Communications, or any degree with practical campaign experience.",
+      "industries": [
+        "E-commerce",
+        "agencies",
+        "SaaS/tech",
+        "retail",
+        "healthcare",
+        "education."
+      ],
+      "industriesSummary": "E-commerce, agencies, SaaS/tech, retail, healthcare, education.",
+      "resumeKeywords": [
+        "SEO",
+        "PPC",
+        "Google Ads",
+        "GA4",
+        "ROAS",
+        "conversion rate %",
+        "budget managed",
+        "leads generated."
+      ],
+      "resumeKeywordsSummary": "SEO, PPC, Google Ads, GA4, ROAS, conversion rate %, budget managed, leads generated.",
+      "crossQuestions": [
+        {
+          "q": "Do certifications matter?",
+          "a": "Free Google and HubSpot certs are helpful supporting proof, but employers care most about campaign results (budgets handled, leads, ROAS)."
+        },
+        {
+          "q": "Specialist vs Generalist?",
+          "a": "Larger companies hire specialists (SEO, PPC); smaller companies prefer generalists. We can position your profile either way."
+        },
+        {
+          "q": "Is AI replacing digital marketing?",
+          "a": "AI tools are changing how content and ads are produced; marketers who use AI tools effectively are increasingly valued."
+        },
+        {
+          "q": "Should I focus on B2B or B2C digital marketing?",
+          "a": "Both are in demand. B2C emphasizes high-volume social advertising (Meta, TikTok), creative campaigns, and immediate e-commerce conversions; B2B focuses on Google Search, LinkedIn Ads, long sales funnels, and lead generation (MQLs). We highlight the audience type you have worked with."
+        }
+      ],
+      "relatedRoles": [
+        "marketing-manager",
+        "product-manager"
+      ],
+      "salary": {
+        "us": "$60,000 - $95,000 (Median ~$72,000)",
+        "ca": "CAD $55,000 - $85,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the difference between SEO and SEM/PPC?",
+          "options": [
+            "SEO optimizes content to earn organic (free) rankings on Google; SEM/PPC involves paying for ads to appear in search results.",
+            "SEO is only for mobile phones; SEM is for computers.",
+            "SEO requires coding in C++; SEM requires no internet.",
+            "There is no difference."
+          ],
+          "answer": 0,
+          "explanation": "SEO drives organic traffic over time through optimization; SEM (PPC) purchases ad placements on search engines instantly."
+        },
+        {
+          "q": "What does ROAS stand for in paid advertising?",
+          "options": [
+            "Rate of Automated Sales",
+            "Return on Ad Spend — revenue generated divided by the dollars spent on advertising.",
+            "Relevance of Audience Segmentation",
+            "Return on Account Sponsorship"
+          ],
+          "answer": 1,
+          "explanation": "ROAS (e.g. 4x or 400%) measures financial returns directly attributed to specific marketing advertising expenditure."
+        },
+        {
+          "q": "What is GA4?",
+          "options": [
+            "General Assembly meeting number 4.",
+            "Google Analytics 4 — the event-based web and app analytics platform used to track user behavior and conversions.",
+            "A new version of graphic design software.",
+            "A social media advertising network."
+          ],
+          "answer": 1,
+          "explanation": "GA4 is Google's modern analytics platform tracking cross-platform event streams, engagement, and conversion paths."
+        },
+        {
+          "q": "What does CTR measure in digital campaigns?",
+          "options": [
+            "Computer Telephony Response",
+            "Click-Through Rate — the percentage of people who click on a link or ad after viewing it.",
+            "Cost to Refund",
+            "Conversion Tracking Ratio"
+          ],
+          "answer": 1,
+          "explanation": "CTR = (Clicks / Impressions) * 100%, indicating how engaging the ad creative and headline are."
+        },
+        {
+          "q": "What is the most critical item employers look for on a Digital Marketer's resume?",
+          "options": [
+            "A list of high school awards.",
+            "Quantifiable campaign achievements: ROAS achieved, lead volume generated, CAC reduction, and budget sizes managed.",
+            "10 pages of social media screenshots.",
+            "A certificate of typing speed."
+          ],
+          "answer": 1,
+          "explanation": "Marketing hiring managers want hard performance numbers demonstrating commercial return on spend."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "marketing-manager",
+      "name": "Marketing Manager",
+      "category": "Business, Marketing & Operations",
+      "icon": "target",
+      "oneLiner": "Leads overall brand strategy, campaign planning, go-to-market execution, and marketing budgets.",
+      "quickPitch": "A Marketing Manager plans and leads a company's overall marketing strategy — deciding target customers, messaging, channels and budgets — and manages the team and agencies that execute campaigns to grow the business.",
+      "dayToDay": [
+        "Create marketing plans and budgets.",
+        "Define target audience, positioning and messaging.",
+        "Oversee campaigns across digital, events, PR and content.",
+        "Manage team members and agencies.",
+        "Report on results (pipeline, revenue, ROI) to leadership."
+      ],
+      "altTitles": [
+        "Marketing Manager",
+        "Brand Manager",
+        "Product Marketing Manager (PMM)",
+        "Growth Marketing Manager",
+        "Demand Generation Manager",
+        "Marketing Communications Manager"
+      ],
+      "keyTerms": [
+        {
+          "term": "Go-to-market (GTM)",
+          "definition": "Plan for launching a product to customers."
+        },
+        {
+          "term": "Positioning",
+          "definition": "How the product is described vs competitors."
+        },
+        {
+          "term": "Brand awareness",
+          "definition": "How well people know the brand."
+        },
+        {
+          "term": "Demand generation",
+          "definition": "Creating interest that leads to sales."
+        },
+        {
+          "term": "MQL / SQL",
+          "definition": "Marketing-qualified lead / sales-qualified lead."
+        },
+        {
+          "term": "CAC / LTV",
+          "definition": "Customer acquisition cost / customer lifetime value."
+        },
+        {
+          "term": "Marketing ROI",
+          "definition": "Return generated per marketing dollar."
+        },
+        {
+          "term": "Segmentation / Persona",
+          "definition": "Grouping customers / profile of an ideal customer."
+        },
+        {
+          "term": "B2B vs B2C",
+          "definition": "Selling to businesses vs consumers."
+        },
+        {
+          "term": "Attribution",
+          "definition": "Working out which marketing activity led to a sale."
+        }
+      ],
+      "toolsSummary": "HubSpot, Salesforce, Marketo, GA4, Google/Meta Ads, Asana/Monday, Tableau/Looker, SEMrush.",
+      "toolsList": [
+        "HubSpot, Salesforce, Marketo, GA4, Google/Meta Ads, Asana/Monday, Tableau/Looker, SEMrush."
+      ],
+      "certificationsSummary": "Google/HubSpot certifications, PMI or Pragmatic Institute (product marketing), AMA PCM, MBA (common but not required).",
+      "certificationsList": [
+        "Google/HubSpot certifications",
+        "PMI or Pragmatic Institute (product marketing)",
+        "AMA PCM",
+        "MBA (common but not required)."
+      ],
+      "roadmap": {
+        "foundation": "marketing fundamentals, digital channels, analytics.",
+        "jobReady": "3–5+ years of execution, campaign ownership, budget management, CRM, team/agency coordination.",
+        "advanced": "strategy, brand, multi-channel leadership, Director/CMO track."
+      },
+      "background": "Marketing, Business, MBA; usually grows from Digital Marketing or Marketing Specialist roles.",
+      "industries": [
+        "All — tech",
+        "FMCG/CPG",
+        "healthcare",
+        "finance",
+        "retail",
+        "B2B services."
+      ],
+      "industriesSummary": "All — tech, FMCG/CPG, healthcare, finance, retail, B2B services.",
+      "resumeKeywords": [
+        "strategy",
+        "budget ($)",
+        "team size",
+        "pipeline/revenue growth %",
+        "GTM launches",
+        "B2B/B2C."
+      ],
+      "resumeKeywordsSummary": "strategy, budget ($), team size, pipeline/revenue growth %, GTM launches, B2B/B2C.",
+      "crossQuestions": [
+        {
+          "q": "Marketing Manager vs Digital Marketing Specialist?",
+          "a": "The specialist executes campaigns; the manager owns strategy, budget and people."
+        },
+        {
+          "q": "Product Marketing Manager vs Product Manager?",
+          "a": "PMM handles how a product is positioned and launched to the market; PM decides what the product should be and builds it with engineering."
+        },
+        {
+          "q": "Do I need an MBA?",
+          "a": "Helpful for some larger companies, but proven results and leadership experience matter most."
+        },
+        {
+          "q": "How do I demonstrate marketing ROI if I don't directly close deals?",
+          "a": "We emphasize leading pipeline indicators on your resume: Marketing Qualified Leads (MQLs) generated, conversion rates, Customer Acquisition Cost (CAC) reduction, and overall sales pipeline contribution, proving to executive leadership that your campaigns fueled revenue."
+        }
+      ],
+      "relatedRoles": [
+        "digital-marketing-specialist",
+        "product-manager"
+      ],
+      "salary": {
+        "us": "$100,000 - $160,000 (Median ~$135,000)",
+        "ca": "CAD $85,000 - $135,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the key difference between a Marketing Manager and a Digital Marketing Specialist?",
+          "options": [
+            "The Specialist focuses on hands-on tactical channel execution; the Manager owns overall strategy, budgets, brand positioning, and team coordination.",
+            "The Specialist has higher salary and manages all directors.",
+            "Marketing Managers do not use digital media.",
+            "There is no difference in seniority or responsibility."
+          ],
+          "answer": 0,
+          "explanation": "Marketing Managers lead cross-functional strategy, budget allocation, and team/agency management."
+        },
+        {
+          "q": "What is a 'Go-To-Market' (GTM) strategy?",
+          "options": [
+            "A roadmap for opening a grocery store.",
+            "A comprehensive action plan specifying how a company will launch a product to customers to achieve competitive advantage and revenue.",
+            "An internal human resources policy.",
+            "A software patch deployment script."
+          ],
+          "answer": 1,
+          "explanation": "A GTM strategy defines target audiences, marketing channels, pricing, sales enablement, and launch messaging."
+        },
+        {
+          "q": "What does CAC to LTV ratio evaluate in business marketing?",
+          "options": [
+            "Computer Access Code to Local Terminal Velocity.",
+            "Customer Acquisition Cost compared to Customer Lifetime Value — evaluating long-term profitability of marketing investments.",
+            "Click Algorithm Calculation to Lead Tracking Volume.",
+            "Corporate Asset Class to Loan Total Value."
+          ],
+          "answer": 1,
+          "explanation": "A healthy LTV:CAC ratio (typically 3:1 or higher) proves that marketing generates profitable, sustainable customer relationships."
+        },
+        {
+          "q": "What is the distinction between an MQL and an SQL?",
+          "options": [
+            "Marketing Qualified Lead (deemed likely to buy by marketing based on engagement) vs Sales Qualified Lead (vetted and accepted by sales for direct outreach).",
+            "MQL is a database language; SQL is a spreadsheet.",
+            "MQL is a manager role; SQL is a specialist role.",
+            "They are identical terms."
+          ],
+          "answer": 0,
+          "explanation": "MQLs enter the top of the funnel via marketing activities; sales reps review and qualify them into SQLs for pipeline deals."
+        },
+        {
+          "q": "What role does a Product Marketing Manager (PMM) play compared to a core Product Manager (PM)?",
+          "options": [
+            "The PMM decides how to position, message, and sell the product to the market; the PM defines what features get built with software engineers.",
+            "The PMM writes all software code; the PM runs Facebook ads.",
+            "PMM is an entry-level intern role; PM is the CEO.",
+            "Both roles only write technical documentation."
+          ],
+          "answer": 0,
+          "explanation": "PMMs drive market positioning, customer persona research, competitive analysis, and sales enablement; PMs build the product with engineering."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "product-manager",
+      "name": "Product Manager",
+      "category": "Business, Marketing & Operations",
+      "icon": "layers",
+      "oneLiner": "Defines product vision, requirements, and roadmaps to bridge customer needs and engineering.",
+      "quickPitch": "A Product Manager decides what a product should do and why — balancing customer needs, business goals and technical feasibility — then works with engineers and designers to build and launch it. Often described as the \"CEO of the product\", though without direct authority over the team.",
+      "dayToDay": [
+        "Talk to customers and analyse data to find problems worth solving.",
+        "Define the product vision and roadmap.",
+        "Write requirements (PRDs, user stories) and prioritise the backlog.",
+        "Work daily with engineering and design in Agile sprints.",
+        "Launch features and measure success with metrics."
+      ],
+      "altTitles": [
+        "Product Manager",
+        "Associate PM (APM)",
+        "Senior PM",
+        "Technical Product Manager (TPM)",
+        "Product Owner",
+        "Group PM",
+        "Product Lead"
+      ],
+      "keyTerms": [
+        {
+          "term": "Product roadmap",
+          "definition": "Plan of what will be built and when."
+        },
+        {
+          "term": "PRD",
+          "definition": "Product Requirements Document (like this one!)."
+        },
+        {
+          "term": "User story",
+          "definition": "\"As a [user], I want [goal] so that [benefit].\""
+        },
+        {
+          "term": "Backlog / Prioritisation",
+          "definition": "List of work to do / deciding order (RICE, MoSCoW)."
+        },
+        {
+          "term": "MVP",
+          "definition": "Minimum Viable Product — simplest version to test an idea."
+        },
+        {
+          "term": "Product-market fit",
+          "definition": "Product clearly meets a strong market need."
+        },
+        {
+          "term": "Agile / Scrum / Sprint",
+          "definition": "Iterative development in short cycles."
+        },
+        {
+          "term": "KPIs (DAU, retention, churn)",
+          "definition": "Daily active users, users who return, users who leave."
+        },
+        {
+          "term": "Stakeholder",
+          "definition": "Anyone affected by or influencing the product."
+        },
+        {
+          "term": "Product Owner",
+          "definition": "Scrum role managing the backlog; overlaps with PM."
+        }
+      ],
+      "toolsSummary": "Jira, Confluence, Figma, Productboard, Aha!, Amplitude, Mixpanel, GA4, SQL (helpful), Miro, Notion.",
+      "toolsList": [
+        "Jira, Confluence, Figma, Productboard, Aha!, Amplitude, Mixpanel, GA4, SQL (helpful), Miro, Notion."
+      ],
+      "certificationsSummary": "CSPO (Certified Scrum Product Owner), PSPO, Pragmatic Institute, AIPMM CPM, Product School certificates.",
+      "certificationsList": [
+        "CSPO (Certified Scrum Product Owner)",
+        "PSPO",
+        "Pragmatic Institute",
+        "AIPMM CPM",
+        "Product School certificates."
+      ],
+      "roadmap": {
+        "foundation": "product thinking, Agile/Scrum, user research basics, basic data analysis.",
+        "jobReady": "writing PRDs/user stories, prioritisation frameworks, Jira, metrics, SQL basics, case studies of products shipped.",
+        "advanced": "product strategy, P&L ownership, leading multiple teams, AI product knowledge."
+      },
+      "background": "Engineering, Business, MBA, Design, Data; common transitions from Developer, Business Analyst, Consultant.",
+      "industries": [
+        "Tech/SaaS",
+        "fintech",
+        "e-commerce",
+        "healthcare tech",
+        "enterprise software."
+      ],
+      "industriesSummary": "Tech/SaaS, fintech, e-commerce, healthcare tech, enterprise software.",
+      "resumeKeywords": [
+        "roadmap",
+        "launched [feature]",
+        "metrics improved %",
+        "Agile",
+        "cross-functional leadership",
+        "user research."
+      ],
+      "resumeKeywordsSummary": "roadmap, launched [feature], metrics improved %, Agile, cross-functional leadership, user research.",
+      "crossQuestions": [
+        {
+          "q": "Product Manager vs Project Manager?",
+          "a": "The Product Manager decides *what* to build and *why*; the Project Manager manages *how and when* it gets delivered (timelines, resources)."
+        },
+        {
+          "q": "Product Manager vs Product Owner?",
+          "a": "Product Owner is a Scrum role focused on the backlog; in many companies one person does both."
+        },
+        {
+          "q": "Can a Business Analyst move into PM?",
+          "a": "Yes, it's a common path; we highlight requirement-gathering, stakeholder management and product decisions."
+        },
+        {
+          "q": "Do I need an engineering degree to become a Product Manager?",
+          "a": "Not for general product roles. While Technical Product Managers (TPMs) often have engineering backgrounds, core product management prioritizes customer empathy, clear problem definition, prioritization frameworks (like RICE), and cross-functional leadership."
+        }
+      ],
+      "relatedRoles": [
+        "software-developer",
+        "marketing-manager"
+      ],
+      "salary": {
+        "us": "$115,000 - $175,000 (Median ~$140,000)",
+        "ca": "CAD $95,000 - $150,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is the primary distinction between a Product Manager and a Project Manager?",
+          "options": [
+            "Product Managers determine WHAT to build and WHY (customer problems, value, vision); Project Managers coordinate HOW and WHEN it gets delivered (schedules, resources).",
+            "Project Managers are in charge of code architecture; Product Managers only handle finances.",
+            "They are the exact same title in every company.",
+            "Product Managers do not talk to engineers."
+          ],
+          "answer": 0,
+          "explanation": "Product Managers own the product strategy and value proposition; Project Managers ensure timely, on-budget delivery of commitments."
+        },
+        {
+          "q": "What is an MVP (Minimum Viable Product)?",
+          "options": [
+            "Most Valuable Player in an office game.",
+            "The simplest version of a product that can be released to early customers to validate hypotheses and collect learning with least effort.",
+            "A product that has zero features.",
+            "A completed product after 5 years of development."
+          ],
+          "answer": 1,
+          "explanation": "An MVP delivers core value quickly to test assumptions in the market without over-investing in unnecessary bells and whistles."
+        },
+        {
+          "q": "What does a PRD stand for in tech product teams?",
+          "options": [
+            "Public Relations Department",
+            "Product Requirements Document — the document defining the purpose, user stories, requirements, and metrics for a product feature.",
+            "Personnel Review Directory",
+            "Production Release Diagnostic"
+          ],
+          "answer": 1,
+          "explanation": "A PRD details the user problems, functional requirements, success metrics, and release scope for the engineering and design teams."
+        },
+        {
+          "q": "What is the RICE scoring model used for?",
+          "options": [
+            "Cooking lunch in the cafeteria.",
+            "Prioritizing features based on Reach, Impact, Confidence, and Effort.",
+            "Calculating annual software license costs.",
+            "Screening employee resumes."
+          ],
+          "answer": 1,
+          "explanation": "RICE helps Product Managers objectively score backlog ideas based on Reach * Impact * Confidence / Effort."
+        },
+        {
+          "q": "Can a Business Analyst transition into a Product Manager role?",
+          "options": [
+            "No, it is an entirely forbidden career shift.",
+            "Yes, it is one of the most common transition paths, leveraging shared competencies in requirements gathering, data analysis, and stakeholder alignment.",
+            "Only if they obtain a medical doctorate first.",
+            "Only after working 15 years as an accountant."
+          ],
+          "answer": 1,
+          "explanation": "BAs naturally share strong analytical, requirements, and stakeholder skills with PMs, making it a very frequent and successful career leap."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    },
+    {
+      "id": "supply-chain-analyst",
+      "name": "Supply Chain Analyst",
+      "category": "Business, Marketing & Operations",
+      "icon": "truck",
+      "oneLiner": "Forecasts customer demand, optimizes inventory turnover, and streamlines logistics data.",
+      "quickPitch": "A Supply Chain Analyst uses data to improve how products move from suppliers to warehouses to customers — forecasting demand, managing inventory, reducing costs and avoiding stock-outs or delays.",
+      "dayToDay": [
+        "Analyse inventory, shipping and supplier data.",
+        "Forecast demand and plan inventory levels.",
+        "Track KPIs like on-time delivery and inventory turnover.",
+        "Identify cost-saving opportunities in logistics and procurement.",
+        "Build reports and dashboards for operations teams."
+      ],
+      "altTitles": [
+        "Supply Chain Analyst",
+        "Demand Planner",
+        "Inventory Analyst",
+        "Logistics Analyst",
+        "Procurement Analyst",
+        "Materials Planner",
+        "Operations Analyst",
+        "S&OP Analyst"
+      ],
+      "keyTerms": [
+        {
+          "term": "Supply chain",
+          "definition": "Full flow: suppliers → manufacturing → warehouse → customer."
+        },
+        {
+          "term": "Demand forecasting",
+          "definition": "Predicting how much customers will buy."
+        },
+        {
+          "term": "Inventory turnover",
+          "definition": "How fast stock is sold and replaced."
+        },
+        {
+          "term": "Lead time",
+          "definition": "Time from order to delivery."
+        },
+        {
+          "term": "Safety stock",
+          "definition": "Extra stock kept to avoid running out."
+        },
+        {
+          "term": "ERP",
+          "definition": "Enterprise Resource Planning software (SAP, Oracle) running core operations."
+        },
+        {
+          "term": "MRP",
+          "definition": "Material Requirements Planning — planning materials needed."
+        },
+        {
+          "term": "S&OP",
+          "definition": "Sales & Operations Planning — aligning sales forecasts with supply."
+        },
+        {
+          "term": "Procurement / Sourcing",
+          "definition": "Buying goods / choosing suppliers."
+        },
+        {
+          "term": "3PL / Logistics",
+          "definition": "Third-party logistics provider / transport and warehousing."
+        }
+      ],
+      "toolsSummary": "Excel (advanced), SQL, SAP (MM/SD/APO/IBP), Oracle SCM, Tableau, Power BI, Python (helpful), Kinaxis, Blue Yonder.",
+      "toolsList": [
+        "Excel (advanced), SQL, SAP (MM/SD/APO/IBP), Oracle SCM, Tableau, Power BI, Python (helpful), Kinaxis, Blue Yonder."
+      ],
+      "certificationsSummary": "APICS/ASCM CSCP, CPIM, CLTD; Six Sigma Green Belt; SAP certifications.",
+      "certificationsList": [
+        "APICS/ASCM CSCP",
+        "CPIM",
+        "CLTD; Six Sigma Green Belt; SAP certifications."
+      ],
+      "roadmap": {
+        "foundation": "supply chain basics, Excel (pivot tables, VLOOKUP/XLOOKUP), basic statistics.",
+        "jobReady": "SQL, Power BI/Tableau, ERP experience (SAP), forecasting methods, KPI reporting.",
+        "advanced": "network optimisation, S&OP leadership, Python modelling, CSCP/CPIM, managerial roles."
+      },
+      "background": "Supply Chain, Industrial Engineering, Business, Operations, Economics.",
+      "industries": [
+        "Retail",
+        "e-commerce",
+        "manufacturing",
+        "pharma",
+        "CPG",
+        "logistics companies",
+        "automotive."
+      ],
+      "industriesSummary": "Retail, e-commerce, manufacturing, pharma, CPG, logistics companies, automotive.",
+      "resumeKeywords": [
+        "forecasting accuracy %",
+        "inventory reduction",
+        "SAP",
+        "Excel",
+        "SQL",
+        "Power BI",
+        "cost savings $",
+        "KPIs."
+      ],
+      "resumeKeywordsSummary": "forecasting accuracy %, inventory reduction, SAP, Excel, SQL, Power BI, cost savings $, KPIs.",
+      "crossQuestions": [
+        {
+          "q": "Is SAP experience required?",
+          "a": "Many postings list SAP or another ERP; any ERP experience is valuable and we highlight it."
+        },
+        {
+          "q": "Supply Chain Analyst vs Data Analyst?",
+          "a": "Similar tools (Excel, SQL, BI), but supply chain analysts apply them specifically to inventory, logistics and procurement."
+        },
+        {
+          "q": "Which certification helps most?",
+          "a": "ASCM/APICS certifications (CPIM, CSCP) are the best-known in the field."
+        },
+        {
+          "q": "Is Python or R necessary for a Supply Chain Analyst?",
+          "a": "Advanced Excel (lookups, pivot tables) and SQL are the non-negotiable fundamentals for 90% of roles. Python is an increasingly attractive bonus for automating demand forecasting and complex inventory optimization. We emphasize your quantitative toolset."
+        }
+      ],
+      "relatedRoles": [
+        "data-scientist"
+      ],
+      "salary": {
+        "us": "$70,000 - $110,000 (Median ~$85,000)",
+        "ca": "CAD $65,000 - $95,000",
+        "source": "US Bureau of Labor Statistics (BLS) / Canada Job Bank",
+        "asOf": "2026-10"
+      },
+      "quiz": [
+        {
+          "q": "What is 'Safety Stock'?",
+          "options": [
+            "Shares of stock purchased in a safe company.",
+            "A buffer of surplus inventory held to mitigate the risk of stockouts caused by unpredictable demand spikes or supplier delays.",
+            "Fireproof shelving inside a warehouse.",
+            "First aid equipment stored in delivery trucks."
+          ],
+          "answer": 1,
+          "explanation": "Safety stock cushions unexpected supply disruptions and surges in customer orders to preserve service levels."
+        },
+        {
+          "q": "What is S&OP (Sales and Operations Planning)?",
+          "options": [
+            "Standard & Ordinary Procedure",
+            "An integrated monthly business management process that aligns sales demand forecasts with supply chain and manufacturing capabilities.",
+            "Shipping and Overnight Postage",
+            "Safety and OSHA Protection"
+          ],
+          "answer": 1,
+          "explanation": "S&OP harmonizes the commercial sales plan with inventory, production, and procurement capacity."
+        },
+        {
+          "q": "Which enterprise software suite is the gold standard for global supply chain, inventory, and materials management?",
+          "options": [
+            "SAP (ERP / SCM / IBP)",
+            "Adobe Illustrator",
+            "Spotify",
+            "Audacity"
+          ],
+          "answer": 0,
+          "explanation": "SAP is the global market leader in enterprise resource planning, warehouse management, and supply chain logistics."
+        },
+        {
+          "q": "What does a 3PL refer to in logistics?",
+          "options": [
+            "Third-Party Logistics provider — a specialized external firm outsourced to manage transportation, warehousing, and freight fulfillment.",
+            "3-Phase Power Line",
+            "Triple Product Line",
+            "Three Point Lighting"
+          ],
+          "answer": 0,
+          "explanation": "A 3PL handles fulfillment, ocean/air shipping, and regional distribution for businesses without their own fleet."
+        },
+        {
+          "q": "What does Lead Time signify in procurement and supply chain?",
+          "options": [
+            "The time a sales lead spends in the CRM.",
+            "The latency elapsed from the moment a purchase order is placed until the goods are received and ready for use.",
+            "The hours a warehouse manager works each week.",
+            "The expiration date of canned goods."
+          ],
+          "answer": 1,
+          "explanation": "Lead time dictates how far in advance replenishment orders must be dispatched to avoid running out of materials."
+        }
+      ],
+      "lastReviewed": "2026-10-30"
+    }
+  ],
+  "comparisons": [
+    {
+      "pair": "Data Scientist vs ML Engineer",
+      "roleA": "Data Scientist",
+      "roleB": "ML Engineer",
+      "difference": "Insights & models vs deploying models in production."
+    },
+    {
+      "pair": "Data Scientist vs Data Analyst",
+      "roleA": "Data Scientist",
+      "roleB": "Data Analyst",
+      "difference": "Prediction & ML vs reporting what happened."
+    },
+    {
+      "pair": "Cloud Engineer vs DevOps Engineer",
+      "roleA": "Cloud Engineer",
+      "roleB": "DevOps Engineer",
+      "difference": "Building cloud infrastructure vs automating software delivery."
+    },
+    {
+      "pair": "DevOps vs SRE",
+      "roleA": "DevOps",
+      "roleB": "SRE",
+      "difference": "Delivery automation vs reliability targets & operations."
+    },
+    {
+      "pair": "Prompt Engineer vs AI/ML Engineer",
+      "roleA": "Prompt Engineer",
+      "roleB": "AI/ML Engineer",
+      "difference": "Designing AI instructions & workflows vs building/training models."
+    },
+    {
+      "pair": "Civil Engineer vs Construction Manager",
+      "roleA": "Civil Engineer",
+      "roleB": "Construction Manager",
+      "difference": "Designing vs managing construction."
+    },
+    {
+      "pair": "Mechanical vs Process Engineer",
+      "roleA": "Mechanical",
+      "roleB": "Process Engineer",
+      "difference": "Designing products/machines vs designing/improving production processes."
+    },
+    {
+      "pair": "Validation Engineer vs QA",
+      "roleA": "Validation Engineer",
+      "roleB": "QA",
+      "difference": "Technical testing & documentation vs overall quality oversight."
+    },
+    {
+      "pair": "Product Manager vs Project Manager",
+      "roleA": "Product Manager",
+      "roleB": "Project Manager",
+      "difference": "What & why vs how & when."
+    },
+    {
+      "pair": "Marketing Manager vs Digital Marketer",
+      "roleA": "Marketing Manager",
+      "roleB": "Digital Marketer",
+      "difference": "Strategy, budget & team vs channel execution."
+    },
+    {
+      "pair": "Supply Chain Analyst vs Data Analyst",
+      "roleA": "Supply Chain Analyst",
+      "roleB": "Data Analyst",
+      "difference": "Same tools, applied to inventory/logistics."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "21 CFR Part 11",
+      "definition": "FDA rule on electronic records and signatures.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "3PL / Logistics",
+      "definition": "Third-party logistics provider / transport and warehousing.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "A/B testing",
+      "definition": "Comparing two versions to see which performs better.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "AC / DC",
+      "definition": "Alternating current / direct current.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Agile / Scrum / Sprint",
+      "definition": "Iterative way of working in 1–2 week cycles.",
+      "roles": [
+        "Software Developer",
+        "Product Manager"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "API / REST",
+      "definition": "A way for software systems to talk to each other.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Arc flash / Short circuit study",
+      "definition": "Electrical safety and fault analysis studies.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Attribution",
+      "definition": "Working out which marketing activity led to a sale.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Auto-scaling / Load balancer",
+      "definition": "Adding servers when traffic rises / spreading traffic across servers.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "AutoCAD / Civil 3D",
+      "definition": "Drafting and civil design software.",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "AWS / Azure / GCP",
+      "definition": "The three biggest cloud providers (Amazon, Microsoft, Google).",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "B2B vs B2C",
+      "definition": "Selling to businesses vs consumers.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Backlog / Prioritisation",
+      "definition": "List of work to do / deciding order (RICE, MoSCoW).",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Bid / Estimate",
+      "definition": "Price proposal / cost calculation.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Big Data",
+      "definition": "Data too large for normal tools; handled with Spark, Hadoop.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "BIM",
+      "definition": "Building Information Modelling — 3D digital models of buildings (Revit).",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "BOM",
+      "definition": "Bill of Materials — list of all parts.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Brand awareness",
+      "definition": "How well people know the brand.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Building codes",
+      "definition": "Legal safety rules (e.g., IBC in US, National Building Code in Canada).",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "CAC / LTV",
+      "definition": "Customer acquisition cost / customer lifetime value.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "CAD",
+      "definition": "Computer-Aided Design — SolidWorks, AutoCAD, CATIA, Creo, NX.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "CAPA",
+      "definition": "Corrective and Preventive Action.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "CFD",
+      "definition": "Simulating fluid and air flow.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Chain-of-thought",
+      "definition": "Encouraging the model to reason step by step.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Change order",
+      "definition": "Approved change to scope, cost or time.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "CI/CD",
+      "definition": "Continuous Integration / Continuous Delivery — automatically testing and releasing code.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Cleaning validation",
+      "definition": "Proving equipment cleaning removes residues.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Cloud migration",
+      "definition": "Moving systems into the cloud.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Commercial vs Residential vs Infrastructure",
+      "definition": "Office/retail / homes / roads, bridges, utilities.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Configuration management",
+      "definition": "Keeping servers set up consistently (Ansible, Chef, Puppet).",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Containers / Kubernetes",
+      "definition": "Packaged apps / the system that runs many containers.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Conversion / Conversion rate",
+      "definition": "Desired action (purchase, sign-up) / % who do it.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "CPC / CPA / ROAS",
+      "definition": "Cost per click / cost per acquisition / return on ad spend.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "CQV",
+      "definition": "Commissioning, Qualification & Validation.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "CSV / CSA",
+      "definition": "Computer System Validation / Computer Software Assurance (newer risk-based FDA approach).",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "CTR",
+      "definition": "Click-Through Rate — % of people who click.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Data cleaning / wrangling",
+      "definition": "Fixing missing, wrong or messy data.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Data Engineer (related)",
+      "definition": "Builds the pipelines that move and store data; Data Scientists use that data.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Data structures & algorithms (DSA)",
+      "definition": "Core CS concepts heavily tested in US tech interviews.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Data visualisation",
+      "definition": "Charts and dashboards that explain data.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Database (SQL / NoSQL)",
+      "definition": "Where data is stored — MySQL, PostgreSQL / MongoDB.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Deep Learning / Neural Network",
+      "definition": "ML using layered networks loosely inspired by the brain; powers image, speech and language AI.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Demand forecasting",
+      "definition": "Predicting how much customers will buy.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Demand generation",
+      "definition": "Creating interest that leads to sales.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "DevSecOps",
+      "definition": "Adding security checks into the DevOps pipeline.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "DFM",
+      "definition": "Design for Manufacturing — designing parts that are easy and cheap to make.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Docker / container",
+      "definition": "Packaging an app with everything it needs to run anywhere.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "EDA",
+      "definition": "Exploratory Data Analysis — first look at data to understand it.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "ERP",
+      "definition": "Enterprise Resource Planning software (SAP, Oracle) running core operations.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Evaluation (evals)",
+      "definition": "Systematic testing of AI output quality.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "FDA / Health Canada",
+      "definition": "US / Canadian regulators.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "FE / PE exams (US)",
+      "definition": "Fundamentals of Engineering exam → EIT; Professional Engineer licence after experience.",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "FEA",
+      "definition": "Finite Element Analysis — simulating stress/strain on parts (ANSYS).",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Feature engineering",
+      "definition": "Creating useful input variables for a model.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Fine-tuning",
+      "definition": "Further training an existing model on specific data to specialise it.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Firewall",
+      "definition": "Barrier controlling what network traffic is allowed in/out.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Framework",
+      "definition": "Ready-made toolkit: React, Angular (front-end); Spring Boot, .NET, Django, Node.js (back-end).",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Front-end / Back-end / Full-stack",
+      "definition": "What users see (UI) / server, logic and databases / both.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Funnel",
+      "definition": "Customer journey: awareness → consideration → purchase.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "GA4",
+      "definition": "Google Analytics 4 — website analytics tool.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "GAMP 5",
+      "definition": "Industry guide for validating computerised systems.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Gantt chart / Critical path",
+      "definition": "Schedule visual / the sequence of tasks that determines the end date.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "GD&T",
+      "definition": "Standard symbols on drawings defining allowed tolerances.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "General Contractor (GC)",
+      "definition": "Main company responsible for the build.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Geotechnical",
+      "definition": "Study of soil and rock to design foundations.",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Git / Pull Request",
+      "definition": "Version control / proposing code changes for review.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Git / Version control",
+      "definition": "Tracking code changes; GitHub/GitLab/Bitbucket.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "GMP / cGMP",
+      "definition": "(current) Good Manufacturing Practice — rules for making safe medicines/devices.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Go-to-market (GTM)",
+      "definition": "Plan for launching a product to customers.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "GRC / Compliance",
+      "definition": "Governance, Risk & Compliance — meeting standards like NIST, ISO 27001, SOC 2, HIPAA, PCI-DSS.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Hallucination",
+      "definition": "When AI confidently makes up wrong information.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "HAZOP",
+      "definition": "Structured safety study of a process.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "HVAC",
+      "definition": "Heating, ventilation and air conditioning systems.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Hydraulics / Stormwater",
+      "definition": "Managing water flow and drainage.",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Hypothesis testing / p-value",
+      "definition": "Statistical way to check if a result is real or chance.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "IaaS / PaaS / SaaS",
+      "definition": "Renting servers / renting a platform to build on / using ready software (e.g., Gmail).",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "IAM",
+      "definition": "Identity & Access Management — who can access what.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Incident response",
+      "definition": "Steps taken to contain and recover from an attack.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Infrastructure as Code",
+      "definition": "Creating infrastructure using code (Terraform, Ansible).",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Infrastructure as Code (IaC)",
+      "definition": "Creating servers and networks with code; tools Terraform, CloudFormation.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Inventory turnover",
+      "definition": "How fast stock is sold and replaced.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "IQ / OQ / PQ",
+      "definition": "Installation Qualification (installed correctly) / Operational (works across ranges) / Performance (works consistently in real use).",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Kaizen",
+      "definition": "Continuous small improvements.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "KPI",
+      "definition": "Key Performance Indicator — main success metric.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "KPIs (DAU, retention, churn)",
+      "definition": "Daily active users, users who return, users who leave.",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Kubernetes (K8s)",
+      "definition": "System that runs and manages many containers.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Landing page",
+      "definition": "Page built specifically for a campaign.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Lead time",
+      "definition": "Time from order to delivery.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Lean",
+      "definition": "Method to remove waste from processes.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "LLM",
+      "definition": "Large Language Model — AI trained on huge text data to understand and generate language.",
+      "roles": [
+        "AI / Machine Learning Engineer",
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Load calculation",
+      "definition": "Working out how much power a system needs.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Machine Learning (ML)",
+      "definition": "Software that learns patterns from data instead of being hand-coded with rules.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Malware / Ransomware",
+      "definition": "Malicious software / malware that locks data and demands payment.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Marketing automation",
+      "definition": "Software sending targeted emails automatically (HubSpot, Marketo).",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Marketing ROI",
+      "definition": "Return generated per marketing dollar.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Microservices",
+      "definition": "Building an app as many small independent services.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "MLOps",
+      "definition": "DevOps practices applied to ML: deploying, versioning and monitoring models.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Model",
+      "definition": "The \"trained brain\" produced by learning from data.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Monitoring / Observability",
+      "definition": "Watching system health using metrics, logs and traces.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "MQL / SQL",
+      "definition": "Marketing-qualified lead / sales-qualified lead.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "MRP",
+      "definition": "Material Requirements Planning — planning materials needed.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "MVP",
+      "definition": "Minimum Viable Product — simplest version to test an idea.",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "NEC / CEC",
+      "definition": "National Electrical Code (US) / Canadian Electrical Code.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "NLP / Computer Vision",
+      "definition": "AI for text/language / AI for images and video.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Object storage (S3)",
+      "definition": "Cloud storage for files.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "OSHA",
+      "definition": "US workplace safety rules (OSHA 30 is a common certificate).",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Overfitting",
+      "definition": "When a model memorises training data and fails on new data.",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "P.Eng (Canada)",
+      "definition": "Professional Engineer licence via provincial bodies (e.g., PEO in Ontario).",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "PCB",
+      "definition": "Printed Circuit Board.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Penetration testing",
+      "definition": "Authorised simulated hacking to find weaknesses.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "PFD / P&ID",
+      "definition": "Process Flow Diagram / Piping & Instrumentation Diagram.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Phishing",
+      "definition": "Fake emails/messages tricking people into giving access or data.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Pipeline",
+      "definition": "The automated sequence of build → test → deploy steps.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "PLC",
+      "definition": "Programmable Logic Controller — computer controlling machines in factories.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "PLM",
+      "definition": "Product Lifecycle Management software (Windchill, Teamcenter).",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Positioning",
+      "definition": "How the product is described vs competitors.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Power vs Electronics",
+      "definition": "Large-scale electricity (grids, buildings) vs small circuits (devices, chips).",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "PRD",
+      "definition": "Product Requirements Document (like this one!).",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Procurement / Sourcing",
+      "definition": "Buying goods / choosing suppliers.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Product Owner",
+      "definition": "Scrum role managing the backlog; overlaps with PM.",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Product roadmap",
+      "definition": "Plan of what will be built and when.",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Product-market fit",
+      "definition": "Product clearly meets a strong market need.",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Programming language",
+      "definition": "Java, Python, C#, JavaScript/TypeScript, Go, C++.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Prompt",
+      "definition": "The instruction or input given to an AI model.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Protocol / Deviation",
+      "definition": "Test plan / documented departure from plan.",
+      "roles": [
+        "Validation Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Prototype",
+      "definition": "Early working model for testing.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Punch list",
+      "definition": "Final list of items to fix before completion.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "RAG",
+      "definition": "Retrieval-Augmented Generation — giving an LLM access to company documents so it answers using them.",
+      "roles": [
+        "AI / Machine Learning Engineer",
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Regression / Classification",
+      "definition": "Predicting a number (price) / predicting a category (yes/no, spam/not spam).",
+      "roles": [
+        "Data Scientist"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "RFI",
+      "definition": "Request for Information — formal question to designers.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Root Cause Analysis (RCA)",
+      "definition": "Finding the true cause of a problem (5 Whys, fishbone).",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "S&OP",
+      "definition": "Sales & Operations Planning — aligning sales forecasts with supply.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Safety stock",
+      "definition": "Extra stock kept to avoid running out.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "SCADA",
+      "definition": "Software to monitor and control industrial/utility systems.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Scale-up",
+      "definition": "Moving a process from lab/pilot to full production.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Schematic",
+      "definition": "Diagram of an electrical circuit.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Segmentation / Persona",
+      "definition": "Grouping customers / profile of an ideal customer.",
+      "roles": [
+        "Marketing Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "SEM / PPC",
+      "definition": "Search Engine Marketing / Pay-Per-Click ads.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "SEO",
+      "definition": "Search Engine Optimisation — ranking higher in free Google results.",
+      "roles": [
+        "Digital Marketing Specialist"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Serverless (Lambda)",
+      "definition": "Running code without managing servers.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "SIEM",
+      "definition": "Software that collects and analyses security logs (e.g., Splunk, Microsoft Sentinel).",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Site inspection",
+      "definition": "Checking construction work matches design and codes.",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Six Sigma / DMAIC",
+      "definition": "Data-driven method to reduce defects (Define, Measure, Analyse, Improve, Control).",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "SOC",
+      "definition": "Security Operations Center — the team watching for attacks 24/7.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "SOP",
+      "definition": "Standard Operating Procedure — written step-by-step instructions.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "SPC",
+      "definition": "Statistical Process Control — monitoring processes with control charts.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "SRE",
+      "definition": "Site Reliability Engineering — Google's approach to running reliable systems.",
+      "roles": [
+        "DevOps Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Stakeholder",
+      "definition": "Anyone affected by or influencing the product.",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Structural engineering",
+      "definition": "Designing the \"skeleton\" of buildings and bridges so they stand safely.",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Subcontractor",
+      "definition": "Specialist hired for parts (electrical, plumbing).",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Submittals",
+      "definition": "Documents/samples sent for approval before use.",
+      "roles": [
+        "Construction Manager"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Substation / Switchgear",
+      "definition": "Facility that changes voltage / equipment that controls and protects circuits.",
+      "roles": [
+        "Electrical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Supervised vs Unsupervised",
+      "definition": "Supervised learns from labelled examples; unsupervised finds patterns in unlabelled data.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Supply chain",
+      "definition": "Full flow: suppliers → manufacturing → warehouse → customer.",
+      "roles": [
+        "Supply Chain Analyst"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "System prompt",
+      "definition": "Background instructions that set the AI's role and rules.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Temperature",
+      "definition": "Setting that controls how creative vs predictable outputs are.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Thermodynamics / Heat transfer",
+      "definition": "Science of energy and heat movement.",
+      "roles": [
+        "Mechanical Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Token / Context window",
+      "definition": "Unit of text the model processes / how much text it can consider at once.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Training / Inference",
+      "definition": "Training = teaching the model; inference = using it to make a prediction.",
+      "roles": [
+        "AI / Machine Learning Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Transportation engineering",
+      "definition": "Roads, highways, traffic and transit design.",
+      "roles": [
+        "Civil Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Unit testing",
+      "definition": "Automatic tests for small pieces of code.",
+      "roles": [
+        "Software Developer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "User story",
+      "definition": "\"As a [user], I want [goal] so that [benefit].\"",
+      "roles": [
+        "Product Manager"
+      ],
+      "category": "Business, Marketing & Operations"
+    },
+    {
+      "term": "Virtual Machine (EC2)",
+      "definition": "A computer running in the cloud.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "VPC",
+      "definition": "Virtual Private Cloud — a private network in the cloud.",
+      "roles": [
+        "Cloud Engineer"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Vulnerability / Patch",
+      "definition": "A weakness / the fix for it.",
+      "roles": [
+        "Cybersecurity Analyst"
+      ],
+      "category": "Tech & AI"
+    },
+    {
+      "term": "Yield",
+      "definition": "Percentage of good output from input.",
+      "roles": [
+        "Process Engineer"
+      ],
+      "category": "Engineering, Construction & Manufacturing"
+    },
+    {
+      "term": "Zero-shot / Few-shot",
+      "definition": "Asking without examples / giving a few examples in the prompt.",
+      "roles": [
+        "Prompt Engineer"
+      ],
+      "category": "Tech & AI"
+    }
+  ],
+  "jobMarketBasics": {
+    "ats": {
+      "title": "ATS (Applicant Tracking System)",
+      "summary": "Software employers and recruiters use to collect, parse, filter, and score resumes against job descriptions before a human ever looks at them.",
+      "keyPoints": [
+        "Keyword matching: Resumes must accurately incorporate the exact technical phrases (e.g. 'CI/CD', 'ETAP', '21 CFR Part 11', 'GA4') found in the job specification.",
+        "Formatting hygiene: Single column, clear standard headings, standard PDF/Word formats, avoiding tables, text boxes, and complex graphics that scramble parser extraction.",
+        "Why it matters on a call: Explains why our tailored profile marketing produces dramatically higher response rates than blasting one generic resume."
+      ]
+    },
+    "resumeNorms": {
+      "title": "US & Canada Resume Standards",
+      "summary": "Standard business conventions and legal norms in North American professional hiring.",
+      "keyPoints": [
+        "Length: Strictly 1 to 2 pages (max 2 pages for experienced candidates; 1 page for junior).",
+        "Privacy & anti-discrimination: Strictly NO photograph, NO date of birth, NO age, NO marital or family status, NO nationality or religion.",
+        "Quantifiable achievements: Bullet points must follow the Google X-Y-Z formula: 'Accomplished [X], as measured by [Y], by doing [Z]' with numbers, dollar savings, and percentage gains."
+      ]
+    },
+    "linkedin": {
+      "title": "LinkedIn Recruiter Presence",
+      "summary": "The primary platform where 85%+ of US and Canadian corporate and technical recruiters source active and passive talent.",
+      "keyPoints": [
+        "Headline: Must state target job title and top 3-4 specialized competencies (not just 'Aspiring Software Engineer' or 'Seeking Opportunities').",
+        "About section: First 3 lines hook the reader before the 'see more' fold, followed by a crisp narrative and a categorized 'Core Competencies' block.",
+        "Skills inventory: Pinning and ordering top skills so they align with LinkedIn Recruiter search algorithms."
+      ]
+    },
+    "jobTypes": {
+      "title": "North American Employment Types",
+      "summary": "How jobs are structured from tax, contract, and employer perspectives.",
+      "usTypes": [
+        {
+          "type": "W-2 (Full-Time / Direct Hire)",
+          "detail": "Permanent or contract employee on the payroll of the employer or agency with standard tax withholdings and benefits."
+        },
+        {
+          "type": "C2C (Corp-to-Corp)",
+          "detail": "B2B contract between the client and the candidate's registered corporation (LLC or Inc.). Common for senior contractors and visa holders through third-party vendors."
+        },
+        {
+          "type": "1099 (Independent Contractor)",
+          "detail": "Direct freelance agreement without taxes withheld. Less common for foreign national candidates."
+        },
+        {
+          "type": "Contract-to-Hire (C2H)",
+          "detail": "Starts on a 3 to 12 month contract with a scheduled evaluation for conversion to full-time permanent W-2."
+        }
+      ],
+      "caTypes": [
+        {
+          "type": "Permanent (T4 Full-time)",
+          "detail": "Standard Canadian permanent salaried role with statutory holiday, CPP, and EI deductions."
+        },
+        {
+          "type": "Contract (T4 Employee)",
+          "detail": "Fixed-term staffing contract with statutory tax deductions handled by the placement firm."
+        },
+        {
+          "type": "Incorporated Contractor",
+          "detail": "B2B billing via a Canadian federal or provincial incorporated business (Inc./Corp.), similar to US C2C."
+        }
+      ]
+    },
+    "hiringStages": [
+      {
+        "stage": "1. Application & ATS Filter",
+        "desc": "Resume parsed and ranked by automated screening algorithms."
+      },
+      {
+        "stage": "2. Recruiter Screening Call",
+        "desc": "15–30 minute conversational screen checking communication, salary expectations, role fit, and work authorization."
+      },
+      {
+        "stage": "3. Hiring Manager Screen",
+        "desc": "30–45 minute conversation testing domain depth, previous projects, and team culture fit."
+      },
+      {
+        "stage": "4. Technical Assessment / Take-home",
+        "desc": "Coding test (LeetCode / HackerRank), design problem, or take-home case study."
+      },
+      {
+        "stage": "5. Onsite / Final Loop Panel",
+        "desc": "3–5 consecutive rounds (System Design, Deep Technical, Behavioral / STAR method, Leadership)."
+      },
+      {
+        "stage": "6. Offer & Background Check",
+        "desc": "Formal written offer followed by employment history, education, and criminal background verification (e.g. via HireRight or Sterling)."
+      }
+    ],
+    "workAuth": {
+      "title": "Work Authorization Terminology (Awareness Only)",
+      "disclaimer": "CRITICAL: The sales team does NOT provide legal or immigration advice. This section is strictly to recognize candidate terminology and position their profile correctly.",
+      "usTerms": [
+        {
+          "code": "OPT",
+          "name": "Optional Practical Training",
+          "detail": "12-month post-graduation work authorization for F-1 student visa holders."
+        },
+        {
+          "code": "STEM OPT",
+          "name": "STEM OPT Extension",
+          "detail": "Additional 24-month extension (total 36 months) for graduates of qualifying STEM degree programs."
+        },
+        {
+          "code": "CPT",
+          "name": "Curricular Practical Training",
+          "detail": "Authorization allowing enrolled F-1 students to work in an internship or co-op integral to their curriculum."
+        },
+        {
+          "code": "H-1B",
+          "name": "Specialty Occupation Visa",
+          "detail": "Employer-sponsored temporary work visa subject to an annual lottery (April) with a 6-year general cap (unless I-140 approved)."
+        },
+        {
+          "code": "L-1",
+          "name": "Intracompany Transferee",
+          "detail": "Visa for employees transferring from an overseas branch to a US office (L-1A executive / L-1B specialized knowledge)."
+        },
+        {
+          "code": "Green Card (PR)",
+          "name": "Permanent Resident",
+          "detail": "Permanent legal status with unrestricted employment authorization across all private US employers."
+        },
+        {
+          "code": "US Citizen",
+          "name": "Citizen",
+          "detail": "Required for most high-level security clearance and defense/aerospace federal contract positions."
+        }
+      ],
+      "caTerms": [
+        {
+          "code": "PGWP",
+          "name": "Post-Graduation Work Permit",
+          "detail": "Open work permit granted to international students graduating from designated Canadian learning institutions (up to 3 years)."
+        },
+        {
+          "code": "Open Work Permit",
+          "name": "Open Work Permit",
+          "detail": "Authorizes employment for any Canadian employer without needing a specific job offer or LMIA (e.g. spousal open work permit)."
+        },
+        {
+          "code": "Closed Work Permit",
+          "name": "Employer-Specific Permit",
+          "detail": "Tied to a specific sponsoring employer who obtained an LMIA or LMIA exemption."
+        },
+        {
+          "code": "LMIA",
+          "name": "Labour Market Impact Assessment",
+          "detail": "Document a Canadian employer must obtain proving no Canadian citizen or PR was available for the job."
+        },
+        {
+          "code": "PR",
+          "name": "Permanent Resident",
+          "detail": "Full permanent status allowing unrestricted employment in any province or territory."
+        }
+      ],
+      "officialLinks": [
+        {
+          "name": "US Citizenship and Immigration Services (USCIS)",
+          "url": "https://www.uscis.gov"
+        },
+        {
+          "name": "Immigration, Refugees and Citizenship Canada (IRCC)",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship.html"
+        }
+      ]
+    }
+  },
+  "crossQuestionsGuide": {
+    "techniqueSteps": [
+      {
+        "step": 1,
+        "title": "Listen & Mirror",
+        "desc": "Listen actively without interrupting. Repeat back their specific role and specializations in their exact terminology so they feel heard."
+      },
+      {
+        "step": 2,
+        "title": "Deliver the Quick Pitch & Keywords",
+        "desc": "Use the 30-second Quick Pitch and 1–2 key industry terms naturally in your response. Sound knowledgeable, but never lecture."
+      },
+      {
+        "step": 3,
+        "title": "The Honest Deferral Script",
+        "desc": "If a candidate asks an ultra-specific or deeply technical question you aren't sure about, say: 'That is a great, specific question — let me confirm with our technical/marketing specialist and get back to you today.' Never guess or bluff."
+      },
+      {
+        "step": 4,
+        "title": "Re-anchor to Value",
+        "desc": "Transition the conversation back to our core service: positioning their profile for ATS compliance, optimizing resume impact, and reaching hiring decision-makers."
+      }
+    ],
+    "complianceGuardrails": {
+      "mustNotSay": [
+        "NEVER guarantee a job, guaranteed interviews, hiring timeline, or specific salary outcome.",
+        "NEVER give legal or immigration advice. If asked about visa sponsorship or filings, refer them to a licensed immigration attorney or official USCIS/IRCC channels.",
+        "NEVER suggest, recommend, or allow inflating or falsifying experience, dates, qualifications, or work status on a resume.",
+        "NEVER quote salary ranges without citing the verified official source and review date from the guide."
+      ],
+      "approvedResponses": [
+        {
+          "candidateSays": "Can you guarantee I'll get interviews within 30 days?",
+          "repResponse": "We cannot guarantee specific interview offers or hiring timelines because final hiring decisions always rest with the employer. What we guarantee is a rigorous, proven profile marketing process: optimizing your resume to pass ATS filters, highlighting your verified projects and technical strengths, and putting your profile directly in front of targeted recruiters."
+        },
+        {
+          "candidateSays": "Will you help me get an H-1B or Canadian LMIA work permit?",
+          "repResponse": "We are a candidate profile marketing firm, not an immigration law practice. We assist you in finding and marketing your profile to employers who have historically sponsored or are open to your authorization status, but we do not file petitions or give legal advice."
+        },
+        {
+          "candidateSays": "I only have 3 months of experience, can we put 2 years on my resume?",
+          "repResponse": "We adhere to strict integrity standards: we never falsify or exaggerate experience, because background verification checks (HireRight, Sterling) will fail and damage your reputation with employers. Instead, we highlight your verified technical projects, certifications, and skills to present your real qualifications in the strongest possible light."
+        }
+      ]
+    }
+  }
+};
