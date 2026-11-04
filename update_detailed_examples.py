@@ -642,3 +642,4 @@ with open('data/roles-data.js', 'w', encoding='utf-8') as f:
     f.write(';\n')
 
 print("Successfully updated detailed real-world examples for all 18 roles!")
+
