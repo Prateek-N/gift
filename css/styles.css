@@ -1068,12 +1068,20 @@ button {
   margin-bottom: 0.85rem;
   padding-bottom: 0.65rem;
   border-bottom: 1px solid var(--border-light);
+  flex-wrap: wrap;
 }
 
 .example-card-meta {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.example-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   flex-wrap: wrap;
 }
 
@@ -1098,7 +1106,8 @@ button {
   border-radius: var(--radius-full);
 }
 
-.btn-copy-example {
+.btn-copy-example,
+.btn-copy-pitch-tip {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -1114,6 +1123,16 @@ button {
   white-space: nowrap;
 }
 
+.btn-copy-pitch-tip {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-border);
+}
+
+.btn-copy-pitch-tip:hover {
+  background-color: var(--btn-primary-hover);
+}
+
 .btn-copy-example:hover {
   background-color: var(--btn-secondary-bg);
   color: var(--btn-secondary-text);
@@ -1121,17 +1140,53 @@ button {
 }
 
 .example-title {
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--text-main);
   line-height: 1.35;
   margin-bottom: 0.85rem;
 }
 
+/* Simple Everyday Analogy Box (Easy Explanation) */
+.example-analogy-box {
+  background-color: var(--bg-highlight);
+  border: 1px solid var(--border-nav);
+  border-left: 4px solid var(--btn-primary-bg);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.example-analogy-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.775rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  margin-bottom: 0.35rem;
+}
+
+.example-analogy-header svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.example-analogy-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+}
+
 .example-body {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1rem;
   flex: 1;
 }
 
@@ -1142,15 +1197,63 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--primary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.4rem;
 }
 
-.example-scenario-block p,
-.example-action-block p {
+.example-scenario-block p {
+  font-size: 0.925rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Numbered Step-by-Step Actions */
+.example-steps-list {
+  list-style: none;
+  counter-reset: example-step-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+}
+
+.example-steps-list li {
+  counter-increment: example-step-counter;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
   font-size: 0.925rem;
   color: var(--text-main);
   line-height: 1.55;
-  margin: 0;
+}
+
+.example-steps-list li::before {
+  content: counter(example-step-counter);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-medium);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+/* Tools & Technologies Deployed */
+.example-tools-block {
+  margin-top: 0.2rem;
+}
+
+.example-tools-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
 }
 
 /* Soft Mint #C7EBD5 impact callout box */
@@ -1183,6 +1286,39 @@ button {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Sales Rep Talking Tip (Pro-Tip Box) */
+.example-talking-tip-box {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+}
+
+.example-talking-tip-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.775rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+
+.example-talking-tip-header svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.example-talking-tip-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
   line-height: 1.5;
   margin: 0;
 }

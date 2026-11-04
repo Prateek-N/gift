@@ -524,31 +524,75 @@
               <span>3. Real-World Project Examples (What They Do on the Job)</span>
             </h2>
             <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-              Use these concrete industry scenarios on calls to validate the candidate's real project experience and demonstrate technical credibility:
+              Detailed, practical walkthroughs designed to make explaining this role effortless on calls with candidates or stakeholders:
             </p>
             <div class="real-world-examples-grid">
-              ${(role.realWorldExamples || []).map((ex, idx) => `
+              ${(role.realWorldExamples || []).map((ex, idx) => {
+                const stepList = ex.stepByStep && ex.stepByStep.length ? ex.stepByStep : [ex.whatTheyDo];
+                const fullText = `ROLE: ${role.name}\nPROJECT: ${ex.title} (${ex.industry})\n\nHOW TO EXPLAIN IT (SIMPLE ANALOGY):\n"${ex.simpleAnalogy || ''}"\n\nTHE REAL-WORLD PROBLEM:\n${ex.scenario}\n\nWHAT THEY DO DAY-TO-DAY:\n${stepList.map((s, i) => `${i + 1}. ${s}`).join('\n')}\n\nTECH STACK & TOOLS:\n${ex.toolsUsed || ''}\n\nMEASURABLE BUSINESS IMPACT:\n${ex.impact}\n\nSALES CALL TALKING TIP:\n${ex.talkingTip || ''}`;
+                const scriptText = `HOW TO EXPLAIN ${role.name.toUpperCase()} (EASY ANALOGY):\n"${ex.simpleAnalogy || ''}"\n\nPRO-TIP TO SAY ON CALLS:\n"${ex.talkingTip || ''}"`;
+                return `
                 <div class="example-card">
                   <div class="example-card-header">
                     <div class="example-card-meta">
                       <span class="example-number-badge">Example ${idx + 1}</span>
                       <span class="example-industry-tag">${escapeHTML(ex.industry)}</span>
                     </div>
-                    <button type="button" class="btn-copy-example" data-example="${escapeHTML(`Project: ${ex.title} (${ex.industry})\nScenario: ${ex.scenario}\nWhat They Do: ${ex.whatTheyDo}\nImpact: ${ex.impact}`)}" title="Copy example summary for call notes">
-                      ${icons.copy}
-                      <span>Copy Example</span>
-                    </button>
+                    <div class="example-header-actions">
+                      <button type="button" class="btn-copy-pitch-tip" data-pitch="${escapeHTML(scriptText)}" title="Copy quick analogy & talking tip for phone call">
+                        ${icons.copy}
+                        <span>Copy Rep Script</span>
+                      </button>
+                      <button type="button" class="btn-copy-example" data-example="${escapeHTML(fullText)}" title="Copy complete detailed project walkthrough">
+                        ${icons.copy}
+                        <span>Copy Full Story</span>
+                      </button>
+                    </div>
                   </div>
+
                   <h3 class="example-title">${escapeHTML(ex.title)}</h3>
+
+                  <!-- Plain-English Analogy (Makes explanation effortless) -->
+                  ${ex.simpleAnalogy ? `
+                    <div class="example-analogy-box">
+                      <div class="example-analogy-header">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <span>How to Explain It Easily (Everyday Analogy):</span>
+                      </div>
+                      <p class="example-analogy-text">"${escapeHTML(ex.simpleAnalogy)}"</p>
+                    </div>
+                  ` : ''}
+
                   <div class="example-body">
+                    <!-- Real-Life Business Context -->
                     <div class="example-scenario-block">
-                      <span class="example-subheading">The Business Scenario:</span>
+                      <span class="example-subheading">The Real-World Business Problem:</span>
                       <p>${escapeHTML(ex.scenario)}</p>
                     </div>
+
+                    <!-- Step-by-Step What They Actually Do -->
                     <div class="example-action-block">
-                      <span class="example-subheading">Hands-on Execution (What They Do):</span>
-                      <p>${escapeHTML(ex.whatTheyDo)}</p>
+                      <span class="example-subheading">Step-by-Step: What This Person Actually Does on the Job:</span>
+                      <ol class="example-steps-list">
+                        ${stepList.map(step => `
+                          <li><span>${escapeHTML(step)}</span></li>
+                        `).join('')}
+                      </ol>
                     </div>
+
+                    <!-- Tools & Technologies Deployed -->
+                    ${ex.toolsUsed ? `
+                      <div class="example-tools-block">
+                        <span class="example-subheading">Tech Stack & Tools Deployed:</span>
+                        <div class="example-tools-pills">
+                          ${ex.toolsUsed.split(',').map(t => `<span class="chip-sm">${escapeHTML(t.trim())}</span>`).join('')}
+                        </div>
+                      </div>
+                    ` : ''}
+
+                    <!-- Measurable Business Impact -->
                     <div class="example-impact-box">
                       <div class="example-impact-header">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -559,9 +603,23 @@
                       </div>
                       <p class="example-impact-text">${escapeHTML(ex.impact)}</p>
                     </div>
+
+                    <!-- Sales Rep Talking Tip -->
+                    ${ex.talkingTip ? `
+                      <div class="example-talking-tip-box">
+                        <div class="example-talking-tip-header">
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                          </svg>
+                          <span>Sales Call Pro-Tip (Say this to sound like an industry insider):</span>
+                        </div>
+                        <p class="example-talking-tip-text">${escapeHTML(ex.talkingTip)}</p>
+                      </div>
+                    ` : ''}
                   </div>
                 </div>
-              `).join('')}
+              `;
+              }).join('')}
             </div>
           </section>
 
@@ -789,7 +847,16 @@
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const text = btn.getAttribute('data-example');
-        copyToClipboard(text, 'Project Example copied to clipboard!');
+        copyToClipboard(text, 'Full Project Story copied to clipboard!');
+      });
+    });
+
+    // Attach Copy Rep Script (Analogy + Talking Tip)
+    container.querySelectorAll('.btn-copy-pitch-tip').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const text = btn.getAttribute('data-pitch');
+        copyToClipboard(text, 'Rep Script & Analogy copied to clipboard!');
       });
     });
 
