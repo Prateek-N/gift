@@ -10,6 +10,7 @@
   .role-toolbar,
   .btn-copy-pitch,
   .btn-copy-answer,
+  .btn-copy-example,
   .search-modal,
   .modal-overlay,
   .toast-container,
@@ -95,6 +96,12 @@
   .cq-item {
     border: 1pt solid #999999 !important;
     margin-bottom: 0.5rem !important;
+    page-break-inside: avoid;
+  }
+
+  .example-card {
+    border: 1pt solid #cccccc !important;
+    margin-bottom: 0.75rem !important;
     page-break-inside: avoid;
   }
 

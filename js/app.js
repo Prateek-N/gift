@@ -47,6 +47,7 @@
     target: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
     layers: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
     truck: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+    database: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>',
     copy: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
     phone: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
     print: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
@@ -426,17 +427,18 @@
           <ul class="toc-list" id="toc-list">
             <li><a href="#/role/${role.id}#sec-pitch" class="toc-link active">1. Quick Pitch (30s)</a></li>
             <li><a href="#/role/${role.id}#sec-day-to-day" class="toc-link">2. Day-to-Day Tasks</a></li>
-            <li><a href="#/role/${role.id}#sec-alt-titles" class="toc-link">3. Alternate Titles</a></li>
-            <li><a href="#/role/${role.id}#sec-key-terms" class="toc-link">4. Key Terms (${role.keyTerms.length})</a></li>
-            <li><a href="#/role/${role.id}#sec-tools" class="toc-link">5. Tools & Tech</a></li>
-            <li><a href="#/role/${role.id}#sec-certs" class="toc-link">6. Certifications</a></li>
-            <li><a href="#/role/${role.id}#sec-roadmap" class="toc-link">7. Skills Roadmap</a></li>
-            <li><a href="#/role/${role.id}#sec-background" class="toc-link">8. Education & BG</a></li>
-            <li><a href="#/role/${role.id}#sec-industries" class="toc-link">9. Target Industries</a></li>
-            <li><a href="#/role/${role.id}#sec-resume" class="toc-link">10. Resume Keywords</a></li>
-            <li><a href="#/role/${role.id}#sec-cross-questions" class="toc-link">11. Cross-Questions (${role.crossQuestions.length})</a></li>
-            <li><a href="#/role/${role.id}#sec-related" class="toc-link">12. Related Roles</a></li>
-            <li><a href="#/role/${role.id}#sec-salary" class="toc-link">13. Sourced Salary Data</a></li>
+            <li><a href="#/role/${role.id}#sec-examples" class="toc-link">3. Real-World Examples (2)</a></li>
+            <li><a href="#/role/${role.id}#sec-alt-titles" class="toc-link">4. Alternate Titles</a></li>
+            <li><a href="#/role/${role.id}#sec-key-terms" class="toc-link">5. Key Terms (${role.keyTerms.length})</a></li>
+            <li><a href="#/role/${role.id}#sec-tools" class="toc-link">6. Tools & Tech</a></li>
+            <li><a href="#/role/${role.id}#sec-certs" class="toc-link">7. Certifications</a></li>
+            <li><a href="#/role/${role.id}#sec-roadmap" class="toc-link">8. Skills Roadmap</a></li>
+            <li><a href="#/role/${role.id}#sec-background" class="toc-link">9. Education & BG</a></li>
+            <li><a href="#/role/${role.id}#sec-industries" class="toc-link">10. Target Industries</a></li>
+            <li><a href="#/role/${role.id}#sec-resume" class="toc-link">11. Resume Keywords</a></li>
+            <li><a href="#/role/${role.id}#sec-cross-questions" class="toc-link">12. Cross-Questions (${role.crossQuestions.length})</a></li>
+            <li><a href="#/role/${role.id}#sec-related" class="toc-link">13. Related Roles</a></li>
+            <li><a href="#/role/${role.id}#sec-salary" class="toc-link">14. Sourced Salary Data</a></li>
           </ul>
         </aside>
 
@@ -512,9 +514,60 @@
             </ul>
           </section>
 
-          <!-- 3. Common Job Titles / Alternate Names (FR-5) -->
+          <!-- 3. Real-World Project Examples (In Real Life) -->
+          <section class="detail-section" id="sec-examples">
+            <h2 class="section-heading">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary);">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              <span>3. Real-World Project Examples (What They Do on the Job)</span>
+            </h2>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+              Use these concrete industry scenarios on calls to validate the candidate's real project experience and demonstrate technical credibility:
+            </p>
+            <div class="real-world-examples-grid">
+              ${(role.realWorldExamples || []).map((ex, idx) => `
+                <div class="example-card">
+                  <div class="example-card-header">
+                    <div class="example-card-meta">
+                      <span class="example-number-badge">Example ${idx + 1}</span>
+                      <span class="example-industry-tag">${escapeHTML(ex.industry)}</span>
+                    </div>
+                    <button type="button" class="btn-copy-example" data-example="${escapeHTML(`Project: ${ex.title} (${ex.industry})\nScenario: ${ex.scenario}\nWhat They Do: ${ex.whatTheyDo}\nImpact: ${ex.impact}`)}" title="Copy example summary for call notes">
+                      ${icons.copy}
+                      <span>Copy Example</span>
+                    </button>
+                  </div>
+                  <h3 class="example-title">${escapeHTML(ex.title)}</h3>
+                  <div class="example-body">
+                    <div class="example-scenario-block">
+                      <span class="example-subheading">The Business Scenario:</span>
+                      <p>${escapeHTML(ex.scenario)}</p>
+                    </div>
+                    <div class="example-action-block">
+                      <span class="example-subheading">Hands-on Execution (What They Do):</span>
+                      <p>${escapeHTML(ex.whatTheyDo)}</p>
+                    </div>
+                    <div class="example-impact-box">
+                      <div class="example-impact-header">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                          <polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                        <span>Measurable Business Impact:</span>
+                      </div>
+                      <p class="example-impact-text">${escapeHTML(ex.impact)}</p>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </section>
+
+          <!-- 4. Common Job Titles / Alternate Names (FR-5) -->
           <section class="detail-section" id="sec-alt-titles">
-            <h2 class="section-heading">3. Common Job Titles & Alternate Names</h2>
+            <h2 class="section-heading">4. Common Job Titles & Alternate Names</h2>
             <p style="font-size: 0.85rem; color: var(--text-subtle); margin-bottom: 0.75rem;">
               Candidates may introduce themselves with these titles. Searching any of these in Role Ready maps directly to this role:
             </p>
@@ -523,9 +576,9 @@
             </div>
           </section>
 
-          <!-- 4. Key Terms to Know (8-10 terms with plain-English meaning) -->
+          <!-- 5. Key Terms to Know (8-10 terms with plain-English meaning) -->
           <section class="detail-section" id="sec-key-terms">
-            <h2 class="section-heading">4. Key Technical Terms (Plain-English Definitions)</h2>
+            <h2 class="section-heading">5. Key Technical Terms (Plain-English Definitions)</h2>
             <div class="terms-table-wrap">
               <table class="terms-table">
                 <thead>
@@ -546,17 +599,17 @@
             </div>
           </section>
 
-          <!-- 5. Tools & Technologies -->
+          <!-- 6. Tools & Technologies -->
           <section class="detail-section" id="sec-tools">
-            <h2 class="section-heading">5. Tools & Technologies</h2>
+            <h2 class="section-heading">6. Tools & Technologies</h2>
             <div class="tools-tags-wrap">
               ${role.toolsList.map(t => `<span class="tool-tag">${escapeHTML(t)}</span>`).join('')}
             </div>
           </section>
 
-          <!-- 6. Popular Certifications -->
+          <!-- 7. Popular Certifications -->
           <section class="detail-section" id="sec-certs">
-            <h2 class="section-heading">6. Popular Industry Certifications</h2>
+            <h2 class="section-heading">7. Popular Industry Certifications</h2>
             <div class="certs-grid">
               ${role.certificationsList.map(cert => `
                 <div class="cert-card">
@@ -570,9 +623,9 @@
             </div>
           </section>
 
-          <!-- 7. Skills Roadmap -->
+          <!-- 8. Skills Roadmap -->
           <section class="detail-section" id="sec-roadmap">
-            <h2 class="section-heading">7. Skills Roadmap (Career Progression)</h2>
+            <h2 class="section-heading">8. Skills Roadmap (Career Progression)</h2>
             <div class="roadmap-container">
               <div class="roadmap-stage-card stage-foundation">
                 <span class="stage-badge">Stage 1: Foundation</span>
@@ -589,33 +642,33 @@
             </div>
           </section>
 
-          <!-- 8. Typical Background / Education -->
+          <!-- 9. Typical Background / Education -->
           <section class="detail-section" id="sec-background">
-            <h2 class="section-heading">8. Typical Background & Degrees</h2>
+            <h2 class="section-heading">9. Typical Background & Degrees</h2>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
               ${escapeHTML(role.background)}
             </p>
           </section>
 
-          <!-- 9. Target Industries That Hire -->
+          <!-- 10. Target Industries That Hire -->
           <section class="detail-section" id="sec-industries">
-            <h2 class="section-heading">9. Industries That Hire</h2>
+            <h2 class="section-heading">10. Industries That Hire</h2>
             <div class="alt-titles-wrap">
               ${role.industries.map(ind => `<span class="tool-tag">${escapeHTML(ind)}</span>`).join('')}
             </div>
           </section>
 
-          <!-- 10. What Employers Look For on a Resume -->
+          <!-- 11. What Employers Look For on a Resume -->
           <section class="detail-section" id="sec-resume">
-            <h2 class="section-heading">10. What Employers Look for on a Resume</h2>
+            <h2 class="section-heading">11. What Employers Look for on a Resume</h2>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
               <strong>High-Priority Keywords & Proof Points:</strong> ${escapeHTML(role.resumeKeywordsSummary)}
             </p>
           </section>
 
-          <!-- 11. Candidate Cross-Questions & Suggested Answers (FR-9) -->
+          <!-- 12. Candidate Cross-Questions & Suggested Answers (FR-9) -->
           <section class="detail-section" id="sec-cross-questions">
-            <h2 class="section-heading">11. Candidate Cross-Questions & Suggested Answers</h2>
+            <h2 class="section-heading">12. Candidate Cross-Questions & Suggested Answers</h2>
             <p style="font-size: 0.85rem; color: var(--text-subtle); margin-bottom: 1rem;">
               Click any question to view and copy the approved response:
             </p>
@@ -637,9 +690,9 @@
             </div>
           </section>
 
-          <!-- 12. Related Roles -->
+          <!-- 13. Related Roles -->
           <section class="detail-section" id="sec-related">
-            <h2 class="section-heading">12. Related Roles & Cross-Paths</h2>
+            <h2 class="section-heading">13. Related Roles & Cross-Paths</h2>
             <div class="related-roles-list">
               ${role.relatedRoles.map(relId => {
                 const rel = state.data.roles.find(r => r.id === relId);
@@ -651,9 +704,9 @@
             </div>
           </section>
 
-          <!-- 13. Sourced Salary Data (FR-16) -->
+          <!-- 14. Sourced Salary Data (FR-16) -->
           <section class="detail-section" id="sec-salary">
-            <h2 class="section-heading">13. Market Salary Benchmarks (US & Canada)</h2>
+            <h2 class="section-heading">14. Market Salary Benchmarks (US & Canada)</h2>
             <div class="salary-grid">
               <div class="salary-card">
                 <div class="salary-country-label">United States (Annual)</div>
@@ -730,6 +783,15 @@
         copyToClipboard(text, 'Quick Pitch copied to clipboard!');
       });
     }
+
+    // Attach Copy Project Example Buttons
+    container.querySelectorAll('.btn-copy-example').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const text = btn.getAttribute('data-example');
+        copyToClipboard(text, 'Project Example copied to clipboard!');
+      });
+    });
 
     // Attach Cross-Question Accordions (FR-9)
     container.querySelectorAll('.cq-item').forEach(item => {
@@ -1669,6 +1731,20 @@
             url: `#/role/${role.id}#sec-certs`
           });
         }
+
+        // Match real-world project examples
+        if (role.realWorldExamples) {
+          role.realWorldExamples.forEach(ex => {
+            if (matches(ex.title) || matches(ex.scenario) || matches(ex.whatTheyDo) || matches(ex.impact)) {
+              results.push({
+                title: `${ex.title} (${role.name})`,
+                type: 'Project Example',
+                subtext: `${ex.industry}: ${ex.whatTheyDo.slice(0, 95)}...`,
+                url: `#/role/${role.id}#sec-examples`
+              });
+            }
+          });
+        }
       });
 
       // Deduplicate by URL and limit to top 15 results
@@ -1685,7 +1761,7 @@
       if (!state.searchQuery) {
         resultsContainer.innerHTML = `
           <div style="padding: 2rem; text-align: center; color: var(--text-subtle);">
-            <p>Type to search across 17 roles, alternate titles (e.g. SRE, SOC, PMM), key terms, and tools.</p>
+            <p>Type to search across 18 roles, alternate titles (e.g. SRE, SOC, ETL, Airflow), key terms, project examples, and tools.</p>
           </div>
         `;
         return;

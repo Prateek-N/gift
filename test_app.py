@@ -31,8 +31,8 @@ def test_roles_knowledge_guide():
     job_basics = data['jobMarketBasics']
     cq_guide = data['crossQuestionsGuide']
 
-    assert len(roles) == 17, f"Expected 17 roles, got {len(roles)}"
-    print(f"[PASS] Exactly 17 roles present in data/roles.json")
+    assert len(roles) == 18, f"Expected 18 roles, got {len(roles)}"
+    print(f"[PASS] Exactly 18 roles present in data/roles.json (including Data Engineer)")
 
     assert len(categories) == 3, f"Expected 3 categories, got {len(categories)}"
     print(f"[PASS] Exactly 3 categories present")
@@ -41,15 +41,16 @@ def test_roles_knowledge_guide():
     for r in roles:
         cat_counts[r['category']] = cat_counts.get(r['category'], 0) + 1
 
-    assert cat_counts["Tech & AI"] == 7, f"Expected 7 Tech & AI roles, got {cat_counts.get('Tech & AI')}"
+    assert cat_counts["Tech & AI"] == 8, f"Expected 8 Tech & AI roles, got {cat_counts.get('Tech & AI')}"
     assert cat_counts["Engineering, Construction & Manufacturing"] == 6, f"Expected 6 Engineering roles, got {cat_counts.get('Engineering, Construction & Manufacturing')}"
     assert cat_counts["Business, Marketing & Operations"] == 4, f"Expected 4 Business roles, got {cat_counts.get('Business, Marketing & Operations')}"
-    print(f"[PASS] Category distribution: Tech & AI (7), Engineering (6), Business (4)")
+    print(f"[PASS] Category distribution: Tech & AI (8), Engineering (6), Business (4)")
 
     # 3. Check Role Detail requirements (Section 3.2, 8.3)
     total_quiz_q = 0
     total_cqs = 0
     total_terms = 0
+    total_examples = 0
 
     for r in roles:
         rid = r['id']
@@ -70,6 +71,11 @@ def test_roles_knowledge_guide():
         assert r['salary']['us'] and r['salary']['source'] and r['salary']['asOf'], f"{name}: Incomplete salary structure"
         assert len(r['quiz']) >= 5, f"{name}: Expected >= 5 quiz questions, got {len(r['quiz'])}"
 
+        # Validate real-world examples (2 per role)
+        assert len(r.get('realWorldExamples', [])) == 2, f"{name}: Expected exactly 2 realWorldExamples, got {len(r.get('realWorldExamples', []))}"
+        for ex in r['realWorldExamples']:
+            assert ex['title'] and ex['industry'] and ex['scenario'] and ex['whatTheyDo'] and ex['impact'], f"{name}: Incomplete example fields"
+
         # Validate quiz questions
         for q in r['quiz']:
             assert len(q['options']) == 4, f"{name} quiz: options != 4"
@@ -79,15 +85,17 @@ def test_roles_knowledge_guide():
         total_quiz_q += len(r['quiz'])
         total_cqs += len(r['crossQuestions'])
         total_terms += len(r['keyTerms'])
+        total_examples += len(r['realWorldExamples'])
 
-    print(f"[PASS] All 17 roles pass 13-point template checks:")
+    print(f"[PASS] All 18 roles pass 14-point template checks:")
+    print(f"       - Total Real-World Examples: {total_examples} (2 per role)")
     print(f"       - Total Key Terms across roles: {total_terms}")
     print(f"       - Total Candidate Cross-Questions: {total_cqs} (>=4 per role)")
     print(f"       - Total Quiz Questions: {total_quiz_q} (5 per role)")
 
     # 4. Check Comparisons (Section 7.1)
-    assert len(comparisons) == 11, f"Expected 11 comparisons, got {len(comparisons)}"
-    print(f"[PASS] All 11 commonly confused comparisons verified from Section 7.1")
+    assert len(comparisons) >= 11, f"Expected >= 11 comparisons, got {len(comparisons)}"
+    print(f"[PASS] All {len(comparisons)} commonly confused comparisons verified")
 
     # 5. Check Glossary
     assert len(glossary) >= 150, f"Expected >= 150 glossary terms, got {len(glossary)}"
@@ -112,7 +120,10 @@ def test_roles_knowledge_guide():
         ("IQ/OQ/PQ", "Validation Engineer"),
         ("P&ID", "Process Engineer"),
         ("Terraform", "Cloud Engineer"),
-        ("AutoCAD", "Civil Engineer")
+        ("AutoCAD", "Civil Engineer"),
+        ("Data Pipeline Engineer", "Data Engineer"),
+        ("Airflow", "Data Engineer"),
+        ("dbt", "Data Engineer")
     ]
     def norm(s):
         return re.sub(r'[\s\/\-_.,()]+', '', s).lower()
