@@ -375,6 +375,16 @@
 
         <p class="role-card-oneliner">${escapeHTML(role.oneLiner)}</p>
 
+        <div style="margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: space-between;">
+          <a href="#/role/${role.id}#sec-examples" class="card-examples-link" style="font-size: 0.775rem; font-weight: 700; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; background: var(--bg-highlight); padding: 0.2rem 0.65rem; border-radius: var(--radius-full); border: 1px solid var(--border-nav);">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+            <span>2 Real-World Projects →</span>
+          </a>
+        </div>
+
         <div class="role-card-pitch-snippet">
           "${escapeHTML(role.quickPitch.slice(0, 115))}..."
         </div>
